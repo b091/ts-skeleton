@@ -25,25 +25,18 @@ System.config({
 
 System.config({
   "map": {
-    "Hammer": "github:hammerjs/hammer.js@2.0.4",
     "aurelia-dependency-injection": "github:aurelia/dependency-injection@0.9.1",
-    "babel": "npm:babel-core@5.8.3",
-    "babel-runtime": "npm:babel-runtime@5.8.3",
-    "bestiejs/json3": "github:bestiejs/json3@3.3.2",
-    "cagosta/requestAnimationFrame": "github:cagosta/requestAnimationFrame@0.0.22",
+    "babel": "npm:babel-core@5.8.21",
+    "babel-runtime": "npm:babel-runtime@5.8.20",
     "core-js": "npm:core-js@0.9.18",
-    "es5-shim": "github:es-shims/es5-shim@4.1.10",
-    "eventemitter2": "github:asyncly/EventEmitter2@0.4.14",
-    "q": "github:kriskowal/q@1.4.1",
-    "state-machine": "github:jakesgordon/javascript-state-machine@2.3.5",
     "ts": "github:frankwallis/plugin-typescript@2.0.4",
     "typescript": "npm:typescript@1.5.3",
     "github:aurelia/dependency-injection@0.9.1": {
       "aurelia-logging": "github:aurelia/logging@0.6.2",
-      "aurelia-metadata": "github:aurelia/metadata@0.7.1",
+      "aurelia-metadata": "github:aurelia/metadata@0.7.2",
       "core-js": "npm:core-js@0.9.18"
     },
-    "github:aurelia/metadata@0.7.1": {
+    "github:aurelia/metadata@0.7.2": {
       "core-js": "npm:core-js@0.9.18"
     },
     "github:frankwallis/plugin-typescript@2.0.4": {
@@ -61,7 +54,7 @@ System.config({
     "github:jspm/nodelibs-process@0.1.1": {
       "process": "npm:process@0.10.1"
     },
-    "npm:babel-runtime@5.8.3": {
+    "npm:babel-runtime@5.8.20": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:buffer@3.4.0": {
