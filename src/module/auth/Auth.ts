@@ -17,5 +17,14 @@ module.config(($stateProvider) => {
         controllerAs: 'controller'
       }
     }
+  }).state('logout', {
+    url: "/logout",
+    views: {
+      application: {
+        templateUrl: 'src/module/auth/view/logout.html',
+        controller: LogoutCtrl,
+        controllerAs: 'controller'
+      }
+    }
   });
 });
