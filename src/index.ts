@@ -1,9 +1,11 @@
 import {App} from './App';
-import {angular} from './App';
 
-import './module/DashboardModule';
-import './module/UserModule';
+import './module/dashboard/Dashboard';
+import './module/auth/Auth';
 
-angular.element(document).ready(() => {
-  angular.bootstrap(document, ['Application']);
+App.element(document).ready(() => {
+  App.bootstrap(document, [
+    'app',
+    'app.auth'
+  ]);
 });

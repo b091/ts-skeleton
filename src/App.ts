@@ -2,7 +2,8 @@
 import * as angular from 'angular';
 import 'angular-ui-router';
 
-var App = angular.module('Application', ['ui.router']);
+angular.module('app', ['ui.router']);
 
-export {angular};
+var App = angular;
+
 export {App};
