@@ -1,4 +1,4 @@
 # Sample Skeleton App
 
-Typescript + JSPM + Karma + Mocha + Chaijs + Sinonjs + Aurelia Dependency Injection
+Typescript + JSPM + Karma + Mocha + Chaijs + Sinonjs + Angular 1.x
 

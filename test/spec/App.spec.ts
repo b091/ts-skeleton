@@ -1,16 +1,14 @@
 /// <reference path="../references.ts" />
 
-import {Main} from '../../src/Main';
+import {App} from '../../src/App';
 
-describe('Main', () => {
-  let main;
-
+describe('App', () => {
   beforeEach(() => {
-    main = new Main();
+
   });
 
   describe('during initialization', () => {
-    it('should log', () => {
+    it('logs session info', () => {
       // given
 
       // when

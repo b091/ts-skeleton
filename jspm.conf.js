@@ -25,25 +25,21 @@ System.config({
 
 System.config({
   "map": {
-    "aurelia-dependency-injection": "github:aurelia/dependency-injection@0.9.1",
+    "angular": "github:angular/bower-angular@1.4.3",
+    "angular-ui-router": "github:angular-ui/ui-router@0.2.15",
     "babel": "npm:babel-core@5.8.21",
     "babel-runtime": "npm:babel-runtime@5.8.20",
     "core-js": "npm:core-js@0.9.18",
     "ts": "github:frankwallis/plugin-typescript@2.0.4",
     "typescript": "npm:typescript@1.5.3",
-    "github:aurelia/dependency-injection@0.9.1": {
-      "aurelia-logging": "github:aurelia/logging@0.6.2",
-      "aurelia-metadata": "github:aurelia/metadata@0.7.2",
-      "core-js": "npm:core-js@0.9.18"
-    },
-    "github:aurelia/metadata@0.7.2": {
-      "core-js": "npm:core-js@0.9.18"
+    "github:angular-ui/ui-router@0.2.15": {
+      "angular": "github:angular/bower-angular@1.4.3"
     },
     "github:frankwallis/plugin-typescript@2.0.4": {
       "typescript": "npm:typescript@1.5.3"
     },
     "github:jspm/nodelibs-buffer@0.1.0": {
-      "buffer": "npm:buffer@3.4.0"
+      "buffer": "npm:buffer@3.4.1"
     },
     "github:jspm/nodelibs-os@0.1.0": {
       "os-browserify": "npm:os-browserify@0.1.2"
@@ -57,7 +53,7 @@ System.config({
     "npm:babel-runtime@5.8.20": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
-    "npm:buffer@3.4.0": {
+    "npm:buffer@3.4.1": {
       "base64-js": "npm:base64-js@0.0.8",
       "ieee754": "npm:ieee754@1.1.6",
       "is-array": "npm:is-array@1.0.1"

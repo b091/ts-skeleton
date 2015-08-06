@@ -50,7 +50,8 @@
     },
     "configFile": "jspm.conf.js",
     "dependencies": {
-      "aurelia-dependency-injection": "github:aurelia/dependency-injection@^0.9.1",
+      "angular": "github:angular/bower-angular@^1.4.3",
+      "angular-ui-router": "github:angular-ui/ui-router@^0.2.15",
       "ts": "github:frankwallis/plugin-typescript@^2.0.4"
     },
     "devDependencies": {
