@@ -1,0 +1,9 @@
+{
+  "name": "ts-skeleton",
+  "version": "0.1.0",
+  "main": "dist/ts-skeleton.min.js",
+  "ignore": [
+    "tasks",
+    "test"
+  ]
+}
