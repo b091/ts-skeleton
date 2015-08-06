@@ -52,6 +52,7 @@
     "dependencies": {
       "angular": "github:angular/bower-angular@^1.4.3",
       "angular-ui-router": "github:angular-ui/ui-router@^0.2.15",
+      "angular-ui/bootstrap": "github:angular-ui/bootstrap@^0.13.2",
       "ts": "github:frankwallis/plugin-typescript@^2.0.4"
     },
     "devDependencies": {
