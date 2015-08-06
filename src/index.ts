@@ -6,6 +6,7 @@ import './module/auth/Auth';
 App.element(document).ready(() => {
   App.bootstrap(document, [
     'app',
+    'app.dashboard',
     'app.auth'
   ]);
 });
