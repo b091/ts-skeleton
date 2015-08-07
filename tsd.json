@@ -25,6 +25,9 @@
     },
     "angular-ui-router/angular-ui-router.d.ts": {
       "commit": "3d2916191781fe400176a030c03722ac4b87f1c1"
+    },
+    "toastr/toastr.d.ts": {
+      "commit": "b45569f35d5f27716d21cc2a639c7d8ccb9a0164"
     }
   }
 }

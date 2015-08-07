@@ -1,5 +1,3 @@
-import 'angular-toastr/angular-toastr.css!'
-
 import {App} from './App';
 
 import './module/dashboard/Dashboard';
@@ -9,6 +7,7 @@ App.element(document).ready(() => {
   App.bootstrap(document, [
     'app',
     'app.dashboard',
-    'app.auth'
+    'app.auth',
+    'app.toast'
   ]);
 });
