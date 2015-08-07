@@ -1,5 +1,3 @@
-import '../toast/Toast';
-
 export class DashboardCtrl {
 
   public title:string;

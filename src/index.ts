@@ -1,5 +1,6 @@
 import {App} from './App';
 
+import './module/toast/Toast';
 import './module/dashboard/Dashboard';
 import './module/auth/Auth';
 
