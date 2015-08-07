@@ -10,11 +10,13 @@ import * as angular from 'angular';
 import 'angular-ui-router';
 import 'angular-animate';
 import 'angular-cookies';
+import 'angular-messages';
 
 angular.module('app', [
   'ui.router',
   'ngAnimate',
-  'ngCookies'
+  'ngCookies',
+  'ngMessages'
 ]);
 
 const App:angular.IAngularStatic = angular;
