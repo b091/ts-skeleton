@@ -37,6 +37,9 @@
     },
     "angularjs/angular-resource.d.ts": {
       "commit": "284c2b8828f06bdde1f949a22ad174f5221d57f9"
+    },
+    "angularjs/angular-sanitize.d.ts": {
+      "commit": "284c2b8828f06bdde1f949a22ad174f5221d57f9"
     }
   }
 }
