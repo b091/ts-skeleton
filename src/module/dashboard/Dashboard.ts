@@ -1,11 +1,11 @@
 import {App} from '../../App';
 import {DashboardCtrl} from './DashboardCtrl';
 
-const module = App.module('app.dashboard', []);
+const module:angular.IModule = App.module('app.dashboard', []);
 
 module.controller('DashboardCtrl', DashboardCtrl);
 
-module.config(($stateProvider) => {
+module.config(($stateProvider:angular.ui.IStateProvider) => {
   $stateProvider.state('home', {
     url: '/home',
     views: {

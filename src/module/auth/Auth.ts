@@ -2,12 +2,12 @@ import {App} from '../../App';
 import {LoginCtrl} from './LoginCtrl';
 import {LogoutCtrl} from './LogoutCtrl';
 
-const module = App.module('app.auth', []);
+const module:angular.IModule = App.module('app.auth', []);
 
 module.controller('Login', LoginCtrl);
 module.controller('Logout', LogoutCtrl);
 
-module.config(($stateProvider) => {
+module.config(($stateProvider:angular.ui.IStateProvider) => {
   $stateProvider.state('login', {
     url: '/login',
     views: {
@@ -18,7 +18,7 @@ module.config(($stateProvider) => {
       }
     }
   }).state('logout', {
-    url: "/logout",
+    url: '/logout',
     views: {
       application: {
         templateUrl: 'src/module/auth/view/logout.html',

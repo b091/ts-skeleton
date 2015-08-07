@@ -1,11 +1,11 @@
 import {App} from '../../App';
-import 'angular-toastr'
-import 'angular-toastr/angular-toastr.css!'
+import 'angular-toastr';
+import 'angular-toastr/angular-toastr.css!';
 
-const module = App.module('app.toast', ['toastr']);
+const module:angular.IModule = App.module('app.toast', ['toastr']);
 
-module.config((toastrConfig) => {
-  angular.extend(toastrConfig, {
+module.config((toastrConfig:any) => {
+  App.extend(toastrConfig, {
     templates: {
       toast: 'src/module/toast/view/toast.html',
       progressbar: 'src/module/toast/view/progressbar.html'
