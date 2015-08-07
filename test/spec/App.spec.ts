@@ -3,18 +3,18 @@
 import {App} from '../../src/App';
 
 describe('App', () => {
-  beforeEach(() => {
+  // beforeEach(() => {
+  //
+  // });
 
-  });
-
-  describe('during initialization', () => {
-    it('logs session info', () => {
-      // given
-
-      // when
-
-      // then
-    });
-  });
+  // describe('during initialization', () => {
+  //   it('logs session info', () => {
+  //     // given
+  //
+  //     // when
+  //
+  //     // then
+  //   });
+  // });
 
 });
