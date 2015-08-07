@@ -1,10 +1,63 @@
 # Sample Skeleton App
 
-## Angular 1.x + Typescript + JSPM + Karma + Mocha + Chaijs + Sinonjs
+## Technology Stack
+* Typescript 
+* JSPM 
+* Angular 1.x
+* Karma 
+* Mocha 
+* Chaijs 
+* Sinonjs
 
+### Installing
+```
+npm install gulp jspm typescript tsd -g
+```
 
-`npm install gulp jspm typescript tsd -g`
+```
+npm install
+```
 
-`npm install`
+### Gulp tasks
 
-`gulp serve`
+Serves sample app from index.html to browser with livereload
+
+```
+gulp serve
+```
+
+Generates and serves documentation
+
+```
+gulp serve:docs
+```
+
+Checks source and tests with tslint and gulp tasks with jshint
+
+```
+gulp check
+```
+
+Removes compiled *.js and *.map.js files
+
+```
+gulp clean
+```
+
+Runs Typescript compiler on test/ and src/ directory
+
+```
+gulp compile
+```
+
+Creates self executable distribution file in dist/ directory
+
+```
+gulp build
+```
+
+Run tests from test/ directory
+
+```
+gulp test
+```
