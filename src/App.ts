@@ -27,7 +27,8 @@ angular.module('app', [
   'ngCookies',
   'ngMessages',
   'ngResource',
-  'ngSanitize'
+  'ngSanitize',
+  'pascalprecht.translate',
 ]);
 
 const App:angular.IAngularStatic = angular;
