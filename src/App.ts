@@ -1,8 +1,8 @@
 /// <reference path="../vendor/typings/angularjs/angular.d.ts" />
-/// <reference path="../vendor/typings/angular-ui-router/angular-ui-router.d.ts" />
-/// <reference path="../vendor/typings/toastr/toastr.d.ts" />
 /// <reference path="../vendor/typings/angularjs/angular-animate.d.ts" />
 /// <reference path="../vendor/typings/angularjs/angular-cookies.d.ts" />
+/// <reference path="../vendor/typings/angular-ui-router/angular-ui-router.d.ts" />
+/// <reference path="../vendor/typings/toastr/toastr.d.ts" />
 
 /* tslint:disable:variable-name */
 
