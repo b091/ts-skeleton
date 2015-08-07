@@ -59,6 +59,7 @@
       "angular-toastr": "github:Foxandxss/angular-toastr@^1.4.1",
       "angular-ui-router": "github:angular-ui/ui-router@^0.2.15",
       "angular-ui/bootstrap": "github:angular-ui/bootstrap@^0.13.2",
+      "bootstrap": "github:twbs/bootstrap@^3.3.5",
       "css": "github:systemjs/plugin-css@^0.1.13",
       "ts": "github:frankwallis/plugin-typescript@^2.0.4"
     },

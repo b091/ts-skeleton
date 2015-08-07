@@ -13,8 +13,11 @@ import 'angular-ui-router';
 import 'angular-animate';
 import 'angular-cookies';
 import 'angular-messages';
+import 'angular-resource';
 import 'angular-sanitize';
 
+import 'bootstrap';
+import 'bootstrap/css/bootstrap.css!';
 
 angular.module('app', [
   'ui.router',

@@ -36,6 +36,7 @@ System.config({
     "angular-ui/bootstrap": "github:angular-ui/bootstrap@0.13.2",
     "babel": "npm:babel-core@5.8.21",
     "babel-runtime": "npm:babel-runtime@5.8.20",
+    "bootstrap": "github:twbs/bootstrap@3.3.5",
     "core-js": "npm:core-js@0.9.18",
     "css": "github:systemjs/plugin-css@0.1.13",
     "ts": "github:frankwallis/plugin-typescript@2.0.4",
@@ -66,6 +67,9 @@ System.config({
     },
     "github:jspm/nodelibs-process@0.1.1": {
       "process": "npm:process@0.10.1"
+    },
+    "github:twbs/bootstrap@3.3.5": {
+      "jquery": "github:components/jquery@2.1.4"
     },
     "npm:babel-runtime@5.8.20": {
       "process": "github:jspm/nodelibs-process@0.1.1"
