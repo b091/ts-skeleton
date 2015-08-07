@@ -27,6 +27,7 @@ System.config({
   "map": {
     "angular": "github:angular/bower-angular@1.4.3",
     "angular-animate": "github:angular/bower-angular-animate@1.4.3",
+    "angular-cookies": "github:angular/bower-angular-cookies@1.4.3",
     "angular-toastr": "github:Foxandxss/angular-toastr@1.4.1",
     "angular-ui-router": "github:angular-ui/ui-router@0.2.15",
     "angular-ui/bootstrap": "github:angular-ui/bootstrap@0.13.2",
@@ -40,6 +41,9 @@ System.config({
       "angular": "github:angular/bower-angular@1.4.3"
     },
     "github:angular/bower-angular-animate@1.4.3": {
+      "angular": "github:angular/bower-angular@1.4.3"
+    },
+    "github:angular/bower-angular-cookies@1.4.3": {
       "angular": "github:angular/bower-angular@1.4.3"
     },
     "github:frankwallis/plugin-typescript@2.0.4": {
