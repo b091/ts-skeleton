@@ -1,3 +1,5 @@
+import 'angular-toastr/angular-toastr.css!'
+
 import {App} from './App';
 
 import './module/dashboard/Dashboard';
