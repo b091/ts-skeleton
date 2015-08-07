@@ -1,6 +1,7 @@
 /// <reference path="../vendor/typings/angularjs/angular.d.ts" />
 /// <reference path="../vendor/typings/angularjs/angular-animate.d.ts" />
 /// <reference path="../vendor/typings/angularjs/angular-cookies.d.ts" />
+/// <reference path="../vendor/typings/angularjs/angular-resource.d.ts" />
 /// <reference path="../vendor/typings/angular-ui-router/angular-ui-router.d.ts" />
 /// <reference path="../vendor/typings/toastr/toastr.d.ts" />
 
@@ -16,7 +17,8 @@ angular.module('app', [
   'ui.router',
   'ngAnimate',
   'ngCookies',
-  'ngMessages'
+  'ngMessages',
+  'ngResource'
 ]);
 
 const App:angular.IAngularStatic = angular;
