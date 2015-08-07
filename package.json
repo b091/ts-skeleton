@@ -57,6 +57,7 @@
       "angular-resource": "github:angular/bower-angular-resource@^1.4.3",
       "angular-sanitize": "github:angular/bower-angular-sanitize@^1.4.3",
       "angular-toastr": "github:Foxandxss/angular-toastr@^1.4.1",
+      "angular-translate": "github:angular-translate/bower-angular-translate@^2.7.2",
       "angular-ui-router": "github:angular-ui/ui-router@^0.2.15",
       "angular-ui/bootstrap": "github:angular-ui/bootstrap@^0.13.2",
       "bootstrap": "github:twbs/bootstrap@^3.3.5",

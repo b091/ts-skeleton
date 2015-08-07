@@ -32,6 +32,7 @@ System.config({
     "angular-resource": "github:angular/bower-angular-resource@1.4.3",
     "angular-sanitize": "github:angular/bower-angular-sanitize@1.4.3",
     "angular-toastr": "github:Foxandxss/angular-toastr@1.4.1",
+    "angular-translate": "github:angular-translate/bower-angular-translate@2.7.2",
     "angular-ui-router": "github:angular-ui/ui-router@0.2.15",
     "angular-ui/bootstrap": "github:angular-ui/bootstrap@0.13.2",
     "babel": "npm:babel-core@5.8.21",
@@ -41,6 +42,9 @@ System.config({
     "css": "github:systemjs/plugin-css@0.1.13",
     "ts": "github:frankwallis/plugin-typescript@2.0.4",
     "typescript": "npm:typescript@1.5.3",
+    "github:angular-translate/bower-angular-translate@2.7.2": {
+      "angular": "github:angular/bower-angular@1.4.3"
+    },
     "github:angular-ui/ui-router@0.2.15": {
       "angular": "github:angular/bower-angular@1.4.3"
     },
