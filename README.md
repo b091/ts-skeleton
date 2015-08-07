@@ -8,6 +8,7 @@
 * Mocha 
 * Chaijs 
 * Sinonjs
+* Gulp 
 
 ### Installing
 ```
