@@ -1,4 +1,4 @@
-# Sample Skeleton App
+# Sample Skeleton App 
 
 ## Technology Stack
 * Typescript 
@@ -20,7 +20,7 @@ npm install
 
 ### Gulp tasks
 
-Serves sample app from index.html to browser with livereload
+Serves sample app from `index.html` to browser with livereload
 
 ```
 gulp serve
@@ -38,25 +38,25 @@ Checks source and tests with tslint and gulp tasks with jshint
 gulp check
 ```
 
-Removes compiled *.js and *.map.js files
+Removes compiled `*.js` and `*.map.js` files
 
 ```
 gulp clean
 ```
 
-Runs Typescript compiler on test/ and src/ directory
+Runs Typescript compiler on `test/` and `src/` directory
 
 ```
 gulp compile
 ```
 
-Creates self executable distribution file in dist/ directory
+Creates self executable distribution file in `dist/` directory
 
 ```
 gulp build
 ```
 
-Run tests from test/ directory
+Run tests from `test/` directory
 
 ```
 gulp test
