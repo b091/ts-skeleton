@@ -1,4 +1,10 @@
 # Sample Skeleton App
 
-Typescript + JSPM + Karma + Mocha + Chaijs + Sinonjs + Angular 1.x
+## Angular 1.x + Typescript + JSPM + Karma + Mocha + Chaijs + Sinonjs
 
+
+`npm install gulp -g`
+
+`npm install`
+
+`gulp serve`
