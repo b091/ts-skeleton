@@ -35,8 +35,8 @@ System.config({
     "angular-translate": "github:angular-translate/bower-angular-translate@2.7.2",
     "angular-translate-loader-static-files": "github:angular-translate/bower-angular-translate-loader-static-files@2.7.2",
     "angular-translate-loader-url": "github:angular-translate/bower-angular-translate-loader-url@2.7.2",
+    "angular-ui-bootstrap": "github:angular-ui/bootstrap@0.13.2",
     "angular-ui-router": "github:angular-ui/ui-router@0.2.15",
-    "angular-ui/bootstrap": "github:angular-ui/bootstrap@0.13.2",
     "babel": "npm:babel-core@5.8.21",
     "babel-runtime": "npm:babel-runtime@5.8.20",
     "bootstrap": "github:twbs/bootstrap@3.3.5",
@@ -44,6 +44,9 @@ System.config({
     "css": "github:systemjs/plugin-css@0.1.13",
     "ts": "github:frankwallis/plugin-typescript@2.0.4",
     "typescript": "npm:typescript@1.5.3",
+    "github:angular-translate/bower-angular-translate-loader-static-files@2.7.2": {
+      "angular-translate": "github:angular-translate/bower-angular-translate@2.7.2"
+    },
     "github:angular-translate/bower-angular-translate@2.7.2": {
       "angular": "github:angular/bower-angular@1.4.3"
     },
