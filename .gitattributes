@@ -1,1 +1,2 @@
-* text=auto
+*.js linguist-language=TypeScript
+* text=autolanguage
