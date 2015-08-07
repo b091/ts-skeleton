@@ -31,7 +31,7 @@ gulp.task('compile:src', ['clean:src'], require('./tasks/compile')(gulp, plugins
 gulp.task('compile:test', ['clean:test'], require('./tasks/compile')(gulp, plugins, config.testDir));
 gulp.task('compile', ['compile:src', 'compile:test']);
 
-gulp.task('dist', require('./tasks/build')(gulp, plugins, config));
+gulp.task('build', require('./tasks/build')(gulp, plugins, config));
 
 gulp.task('serve', ['compile:src'], require('./tasks/server')(gulp, plugins, __dirname, config.watchDir));
 gulp.task('serve:docs', ['typedoc'], require('./tasks/server')(gulp, plugins, config.docsDir));
@@ -40,4 +40,4 @@ gulp.task('test', ['compile'], require('./tasks/test')(plugins, config.testDir))
 
 gulp.task('typedoc', require('./tasks/typedoc')(gulp, plugins, config));
 
-gulp.task('default', ['check', 'test', 'dist']);
+gulp.task('default', ['check', 'test', 'build']);
