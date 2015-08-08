@@ -13,3 +13,4 @@ src/**/*.js.map
 test/**/*.js
 test/**/*.js.map
 !test/karma.conf.js
+!test/protractor.conf.js
