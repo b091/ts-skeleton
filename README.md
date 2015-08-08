@@ -16,7 +16,7 @@ unit and e2e test samples and most needed automation tasks with gulp.
 * Gulp 
 
 ### Installing dependencies
-
+-------
 ```
 npm install gulp jspm typescript tsd -g
 ```
@@ -26,46 +26,57 @@ npm install
 ```
 
 ### Gulp tasks
-
-Serves sample app from `index.html` to browser with livereload 
-
-```
-gulp serve             # watch *.ts, recompile, reload
-gulp serve --watch-js  # watch *.js, recompile, reload (useful with TypeScript IDE compilation)
-```
-
-Generates and serves documentation
+-------
+Serves application or documentation to browser
 
 ```
-gulp serve:docs
+gulp serve            # Serves application, watch *.ts, recompile, reload
+gulp serve --watch-js # Serves application, watch *.js, recompile, reload (useful with TypeScript IDE compilation)
+gulp serve:docs       # Generates and serves documentation
 ```
 
-Checks source and tests with tslint and gulp tasks with jshint
+Validate sources with specified rules defined in : 
+* `tslint.json` for typescript
+* `.jshintrc` for javascript
+
 
 ```
-gulp check
-```
-
-Removes compiled `*.js` and `*.map.js` files
-
-```
-gulp clean
-```
-
-Runs Typescript compiler on `test/` and `src/` directory
+gulp check              # check all
+gulp check:jshint       # checks gulp tasks and gulpfile (only not generated js files in this repo)
+gulp check:tslint       # checks typescript files from src/ and test/ directory
+gulp check:tslint:src   # checks typescript files from src/ directory
+gulp check:tslint:test  # checks typescript files from src/ directory
 
 ```
-gulp compile
-```
 
-Creates self executable distribution file in `dist/` directory
+Removes compiled files
 
 ```
-gulp build
+gulp clean      # clean all
+gulp clean:src  # removes *.map, *.js files from source directory 
+gulp clean:test # removes *.map, *.js files from test directory
 ```
 
-Runs unit tests from `test/unit` directory and end to end tests from `test/e2e`
+Runs Typescript compiler
 
 ```
-gulp test
+gulp compile      # compile all
+gulp compile:src  # compile *.ts files from source directory
+gulp compile:test # compile *.ts files from test directory
+```
+
+Build sources and documentation
+
+```
+gulp build      # build all
+gulp build:dist # creates self executable distribution file into dist directory
+gulp build:docs # generates documentation into docs directory
+```
+
+Run tests
+
+```
+gulp test       # all tests
+gulp test:unit  # run unit tests from test/unit directory
+gulp test:e2e   # run e2e tests from test/e2e directory
 ```
