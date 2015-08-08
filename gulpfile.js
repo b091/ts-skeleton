@@ -10,15 +10,15 @@ var config = {
     srcDir: path.join(__dirname, 'src'),
     docsDir: path.join(__dirname, 'docs'),
     distDir: path.join(__dirname, 'dist'),
-    tslintSrcConf: path.join(__dirname, 'src', 'tslint.json'),
-    tslintTestConf: path.join(__dirname, 'test', 'tslint.json'),
+    tsLintSrcConf: path.join(__dirname, 'src', 'tslint.json'),
+    tsLintTestConf: path.join(__dirname, 'test', 'tslint.json'),
     watchDir: path.join(__dirname, 'src')
 };
 
 gulp.task('check:jshint', require('./tasks/jshint')(gulp, config));
 gulp.task('check:tslint', ['check:tslint:src', 'check:tslint:test']);
-gulp.task('check:tslint:src', require('./tasks/tslint')(gulp, config.srcDir, config.tslintSrcConf));
-gulp.task('check:tslint:test', require('./tasks/tslint')(gulp, config.testDir, config.tslintTestConf));
+gulp.task('check:tslint:src', require('./tasks/tslint')(gulp, config.srcDir, config.tsLintSrcConf));
+gulp.task('check:tslint:test', require('./tasks/tslint')(gulp, config.testDir, config.tsLintTestConf));
 gulp.task('check', ['check:jshint', 'check:tslint']);
 
 gulp.task('clean:src', require('./tasks/clean')(gulp, config.srcDir));
