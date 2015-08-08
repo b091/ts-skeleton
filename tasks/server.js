@@ -1,11 +1,12 @@
 'use strict';
-module.exports = function(gulp, serverRootDir, watchDir) {
+module.exports = function(gulp, serverRootDir, watchDir, openBrowser) {
     var fs = require('fs');
 
     return function() {
         var path = require('path');
         var portFinder = require('portfinder');
         var webServer = require('gulp-webserver');
+        openBrowser = typeof openBrowser !== 'undefined' ? openBrowser : true;
 
         if (shouldWatchTypeScript() && liveReload()) {
             console.log('TS ON => Watching TypeScript enabled');
@@ -24,7 +25,7 @@ module.exports = function(gulp, serverRootDir, watchDir) {
                         filter: filterWatchFilesForLivereload
                     },
                     fallback: 'index.html',
-                    open: true,
+                    open: openBrowser,
                     port: port
                 }));
         });
