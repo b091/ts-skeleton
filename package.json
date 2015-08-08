@@ -21,7 +21,7 @@
     "jspm": "jspm/jspm-cli#5b4f2ce185b353de1774365f6da657936d5d7292",
     "karma": "^0.13.7",
     "karma-chai-sinon": "^0.1.5",
-    "karma-coverage": "^0.4.2",
+    "karma-coverage": "^0.5.0",
     "karma-jspm": "2.0.1-beta.1",
     "karma-junit-reporter": "~0.3.3",
     "karma-mocha": "^0.2.0",
