@@ -2,19 +2,17 @@
 var gulp = require('gulp');
 var path = require('path');
 
-var joinPath = path.join;
-
 var config = {
     projectDir: __dirname,
-    configDir: joinPath(__dirname, 'config'),
-    taskDir: joinPath(__dirname, 'tasks'),
-    testDir: joinPath(__dirname, 'test'),
-    srcDir: joinPath(__dirname, 'src'),
-    docsDir: joinPath(__dirname, 'docs'),
-    distDir: joinPath(__dirname, 'dist'),
-    tslintSrcConf: joinPath(__dirname, 'src', 'tslint.json'),
-    tslintTestConf: joinPath(__dirname, 'test', 'tslint.json'),
-    watchDir: joinPath(__dirname, 'src')
+    configDir: path.join(__dirname, 'config'),
+    taskDir: path.join(__dirname, 'tasks'),
+    testDir: path.join(__dirname, 'test'),
+    srcDir: path.join(__dirname, 'src'),
+    docsDir: path.join(__dirname, 'docs'),
+    distDir: path.join(__dirname, 'dist'),
+    tslintSrcConf: path.join(__dirname, 'src', 'tslint.json'),
+    tslintTestConf: path.join(__dirname, 'test', 'tslint.json'),
+    watchDir: path.join(__dirname, 'src')
 };
 
 gulp.task('check:jshint', require('./tasks/jshint')(gulp, config));
