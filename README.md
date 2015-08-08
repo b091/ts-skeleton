@@ -38,7 +38,7 @@ npm install
 
 ### Gulp tasks
 -------
-Serves application or documentation to browser
+Serve application or documentation to browser
 
 ```
 gulp serve            # Serves application, watch *.ts, recompile, reload
@@ -59,7 +59,7 @@ gulp check:tslint:src   # checks typescript files from src/ directory
 gulp check:tslint:test  # checks typescript files from src/ directory
 ```
 
-Removes compiled files
+Remove compiled files
 
 ```
 gulp clean      # clean all
@@ -67,7 +67,7 @@ gulp clean:src  # removes *.map, *.js files from source directory
 gulp clean:test # removes *.map, *.js files from test directory
 ```
 
-Runs Typescript compiler
+Run Typescript compiler
 
 ```
 gulp compile      # compile all
