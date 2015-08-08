@@ -3,7 +3,7 @@
 This is an example of application skeleton written full in TypeScript 1.5 including: 
 unit and e2e test samples and most needed automation tasks with gulp.
 
-The only known issue it has is that there is no working typescript 1.5+ preprocessor for karma. And because of that you need to stop karma server after source change and before rerun tests in IDE such as WebStorm. 
+The only known issue it has is that there is no working TypeScript 1.5 preprocessor for karma. And because of that you need to stop karma server after source change and before rerun tests in IDE such as WebStorm. 
 
 ### Technology Stack
 -------
@@ -47,16 +47,16 @@ gulp serve:docs       # Generates and serves documentation
 ```
 
 Validate sources with specified rules defined in : 
-* `tslint.json` for typescript
-* `.jshintrc` for javascript
+* `tslint.json` for TypeScript
+* `.jshintrc` for JavaScript
 
 
 ```
 gulp check              # check all
 gulp check:jshint       # checks gulp tasks and gulpfile (only not generated js files in this repo)
-gulp check:tslint       # checks typescript files from src/ and test/ directory
-gulp check:tslint:src   # checks typescript files from src/ directory
-gulp check:tslint:test  # checks typescript files from src/ directory
+gulp check:tslint       # checks TypeScript files from src/ and test/ directory
+gulp check:tslint:src   # checks TypeScript files from src/ directory
+gulp check:tslint:test  # checks TypeScript files from src/ directory
 ```
 
 Remove compiled files
@@ -67,7 +67,7 @@ gulp clean:src  # removes *.map, *.js files from source directory
 gulp clean:test # removes *.map, *.js files from test directory
 ```
 
-Run Typescript compiler
+Run TypeScript compiler
 
 ```
 gulp compile      # compile all
