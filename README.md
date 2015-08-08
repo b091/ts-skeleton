@@ -8,6 +8,7 @@
 * Mocha 
 * Chaijs 
 * Sinonjs
+* Protractor
 * Gulp 
 
 ### Installing
