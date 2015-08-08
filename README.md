@@ -1,6 +1,7 @@
 # Sample Skeleton App 
 
-This is an example of application skeleton written full in TypeScript 1.5 including: unit and e2e test samples and most needed automation tasks with gulp. 
+This is an example of application skeleton written full in TypeScript 1.5 including: 
+unit and e2e test samples and most needed automation tasks with gulp. 
 
 ## Technology Stack
 
@@ -29,8 +30,8 @@ npm install
 Serves sample app from `index.html` to browser with livereload 
 
 ```
-gulp serve                       # watches *.ts files and reload page with recompile
-gulp serve --watch-js            # watches *.js files and reload page with recompile (useful with IDE TypeScript compilation)
+gulp serve             # watches *.ts files and reload page with recompile
+gulp serve --watch-js  # watches *.js files and reload page with recompile (useful with IDE TypeScript compilation)
 ```
 
 Generates and serves documentation
