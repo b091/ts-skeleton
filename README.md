@@ -57,7 +57,6 @@ gulp check:jshint       # checks gulp tasks and gulpfile (only not generated js 
 gulp check:tslint       # checks typescript files from src/ and test/ directory
 gulp check:tslint:src   # checks typescript files from src/ directory
 gulp check:tslint:test  # checks typescript files from src/ directory
-
 ```
 
 Removes compiled files
