@@ -38,5 +38,5 @@ gulp.task('test:e2e', ['serve:e2e', 'compile'], require('./tasks/e2e')(gulp, con
 gulp.task('test', ['test:unit', 'test:e2e']);
 
 gulp.task('build:dist', require('./tasks/build')(gulp, config));
-gulp.task('build:doc', require('./tasks/typedoc')(gulp, config));
+gulp.task('build:docs', require('./tasks/typedoc')(gulp, config));
 gulp.task('build', ['build:dist', 'build:doc']);
