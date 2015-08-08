@@ -19,7 +19,7 @@ module.exports = function(config) {
                 'test/resources/*.png'
             ],
             loadFiles: [
-                'test/spec/**/*.js'
+                'test/unit/**/*.js'
             ]
         },
 
