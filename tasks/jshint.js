@@ -1,14 +1,16 @@
 'use strict';
-module.exports = function(gulp, plugins, config) {
-
+module.exports = function(gulp, config) {
     return function() {
+        var jsHint = require('gulp-jshint');
+        var path = require('path');
+
         return gulp.src([
-            plugins.joinPath(config.configDir, '**', '*.js'),
-            '!' + plugins.joinPath(config.projectDir, 'jspm.conf.js'),
-            plugins.joinPath(config.taskDir, '**', '*.js'),
+            path.join(config.configDir, '**', '*.js'),
+            '!' + path.join(config.projectDir, 'jspm.conf.js'),
+            path.join(config.taskDir, '**', '*.js'),
             'gulpfile.js'
         ])
-            .pipe(plugins.jshint(plugins.joinPath(config.projectDir, '.jshintrc')))
-            .pipe(plugins.jshint.reporter(require('jshint-stylish')));
+            .pipe(jsHint(path.join(config.projectDir, '.jshintrc')))
+            .pipe(jsHint.reporter(require('jshint-stylish')));
     };
 };

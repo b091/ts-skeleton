@@ -1,8 +1,11 @@
 'use strict';
-module.exports = function(gulp, plugins, config) {
+module.exports = function(gulp, config) {
     return function() {
-        var appName = require(plugins.joinPath(config.projectDir, 'package.json')).name;
-        var tsConfig = require(plugins.joinPath(config.srcDir, 'tsconfig.json'));
+        var path = require('path');
+        var typedoc = require('gulp-typedoc');
+        var appName = require(path.join(config.projectDir, 'package.json')).name;
+        var tsConfig = require(path.join(config.srcDir, 'tsconfig.json'));
+
         var compilerOptions = tsConfig.compilerOptions;
         compilerOptions.out = config.docsDir;
         compilerOptions.name = appName;
@@ -10,6 +13,6 @@ module.exports = function(gulp, plugins, config) {
 
         return gulp
             .src([config.srcDir + '**/*.ts'])
-            .pipe(plugins.typedoc(compilerOptions));
+            .pipe(typedoc(compilerOptions));
     };
 };

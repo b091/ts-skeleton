@@ -1,15 +1,17 @@
 'use strict';
-
-module.exports = function(gulp, plugins, config) {
+module.exports = function(gulp, config) {
     return function() {
+        var path = require('path');
+        var replace = require('gulp-replace');
+        var appName = require(path.join(config.projectDir, 'package.json')).name;
         var Builder = require('jspm').Builder;
-        var appName = require(plugins.joinPath(config.projectDir, 'package.json')).name;
+
         var builder = new Builder();
         var distFileName = appName + '.min.js';
-        var outFile = plugins.joinPath(config.distDir, distFileName);
+        var outFile = path.join(config.distDir, distFileName);
 
         builder.reset();
-        builder.loadConfig(plugins.joinPath(config.projectDir, 'jspm.conf.js'))
+        builder.loadConfig(path.join(config.projectDir, 'jspm.conf.js'))
             .then(function() {
                 var moduleName = 'app';
                 var buildConfig = {
@@ -24,7 +26,7 @@ module.exports = function(gulp, plugins, config) {
                 // Walk around for babel issue
                 // https://github.com/babel/babel/issues/1567
                 gulp.src(mapFile, {base: config.distDir})
-                    .pipe(plugins.replace(config.distDir, '.'))
+                    .pipe(replace(config.distDir, '.'))
                     .pipe(gulp.dest(config.distDir));
                 console.log('Build complete');
             })

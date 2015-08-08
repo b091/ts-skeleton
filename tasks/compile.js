@@ -1,9 +1,11 @@
 'use strict';
-module.exports = function(gulp, plugins, src) {
+module.exports = function(gulp, src) {
 
     function runTSC(directory, done) {
         var cp = require('child_process');
-        var tscJs = plugins.joinPath(process.cwd(), 'node_modules/typescript/bin/tsc.js');
+        var path = require('path');
+        
+        var tscJs = path.join(process.cwd(), 'node_modules/typescript/bin/tsc.js');
         var childProcess = cp.spawn('node', [tscJs, '-p', directory], {cwd: process.cwd()});
 
         childProcess.stdout.on('data', function(data) {

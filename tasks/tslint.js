@@ -1,12 +1,13 @@
 'use strict';
-module.exports = function(gulp, plugins, directory, configuration) {
+module.exports = function(gulp, directory, configuration) {
     return function() {
-        gulp.src([
-            plugins.joinPath(directory, '**', '*.ts')
-        ])
-            .pipe(plugins.tslint({
-                configuration: require(configuration)
-            }))
-            .pipe(plugins.tslint.report('verbose'));
+        var path = require('path');
+        var tslint = require('gulp-tslint');
+
+        return gulp.src([
+            path.join(directory, '**', '*.ts')
+        ]).pipe(tslint({
+            configuration: require(configuration)
+        })).pipe(tslint.report('verbose'));
     };
 };

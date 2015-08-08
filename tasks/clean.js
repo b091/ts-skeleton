@@ -1,10 +1,13 @@
 'use strict';
-module.exports = function(gulp, plugins, dir) {
+module.exports = function(gulp, dir) {
     return function() {
-        return plugins.del([
-            plugins.joinPath(dir, '**', '*.js'),
-            '!' + plugins.joinPath(dir, '*.conf.js'),
-            plugins.joinPath(dir, '**', '*.js.map')
+        var del = require('del');
+        var path = require('path');
+        
+        return del([
+            path.join(dir, '**', '*.js'),
+            '!' + path.join(dir, '*.conf.js'),
+            path.join(dir, '**', '*.js.map')
         ]);
     };
 };

@@ -1,20 +1,24 @@
 'use strict';
-module.exports = function(gulp, plugins, serverRootDir, watchDir) {
+module.exports = function(gulp, serverRootDir, watchDir) {
     var fs = require('fs');
 
     return function() {
+        var path = require('path');
+        var portFinder = require('portfinder');
+        var webServer = require('gulp-webserver');
+
         if (shouldWatchTypeScript() && liveReload()) {
             console.log('TS ON => Watching TypeScript enabled');
-            gulp.watch(plugins.joinPath(watchDir, '**', '*.ts'), ['compile:src']);
+            gulp.watch(path.join(watchDir, '**', '*.ts'), ['compile:src']);
         } else {
             console.log('TS OFF => Watching TypeScript disabled');
         }
 
-        return plugins.portfinder.getPort({
+        return portFinder.getPort({
             host: 'localhost'
         }, function runServer(err, port) {
             gulp.src([serverRootDir])
-                .pipe(plugins.webserver({
+                .pipe(webServer({
                     livereload: {
                         enable: liveReload(),
                         filter: filterWatchFilesForLivereload
