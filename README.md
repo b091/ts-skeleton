@@ -31,7 +31,7 @@ Serves sample app from `index.html` to browser with livereload
 
 ```
 gulp serve             # watches *.ts, recompile, livereload
-gulp serve --watch-js  # watches *.js, recompile, livereload (useful with IDE TypeScript compilation)
+gulp serve --watch-js  # watches *.js, recompile, livereload (useful with TypeScript IDE compilation)
 ```
 
 Generates and serves documentation
