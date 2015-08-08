@@ -40,5 +40,3 @@ gulp.task('test', ['test:unit', 'test:e2e']);
 gulp.task('build:dist', require('./tasks/build')(gulp, config));
 gulp.task('build:doc', require('./tasks/typedoc')(gulp, config));
 gulp.task('build', ['build:dist', 'build:doc']);
-
-gulp.task('default', ['check', 'test', 'build']);
