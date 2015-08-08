@@ -23,9 +23,9 @@ gulp.task('compile:src', ['clean:src'], require('./tasks/compile')(gulp, config.
 gulp.task('compile:test', ['clean:test'], require('./tasks/compile')(gulp, config.testDir));
 gulp.task('compile', ['compile:src', 'compile:test']);
 
-gulp.task('serve', ['compile:src'], require('./tasks/server')(gulp, __dirname, config.watchDir));
 gulp.task('serve:docs', ['typedoc'], require('./tasks/server')(gulp, config.docsDir));
 gulp.task('serve:e2e', require('./tasks/server')(gulp, __dirname, false, false));
+gulp.task('serve', ['compile:src'], require('./tasks/server')(gulp, __dirname, config.watchDir));
 
 gulp.task('check:jshint', require('./tasks/jshint')(gulp, config));
 gulp.task('check:tslint', ['check:tslint:src', 'check:tslint:test']);
