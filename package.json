@@ -13,6 +13,7 @@
     "del": "^1.2.0",
     "gulp": "^3.9.0",
     "gulp-jshint": "^1.11.2",
+    "gulp-protractor": "^1.0.0",
     "gulp-replace": "^0.5.4",
     "gulp-tslint": "^3.1.2",
     "gulp-typedoc": "^1.2.1",
@@ -30,6 +31,7 @@
     "phantomjs": "^1.9.17",
     "phantomjs-polyfill": "0.0.1",
     "portfinder": "^0.4.0",
+    "protractor": "^2.1.0",
     "sinon": "^1.15.4",
     "sinon-chai": "^2.8.0",
     "tsd": "^0.6.3",
@@ -41,7 +43,7 @@
   },
   "scripts": {
     "test": "gulp test",
-    "postinstall": "jspm install && tsd reinstall -s -o"
+    "postinstall": "jspm install && tsd reinstall -s -o && node ./node_modules/protractor/bin/webdriver-manager update"
   },
   "jspm": {
     "directories": {
