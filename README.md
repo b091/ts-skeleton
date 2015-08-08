@@ -1,6 +1,9 @@
 # Sample Skeleton App 
 
+This is an example of application skeleton written full in TypeScript 1.5 including: unit and e2e test samples and most needed automation tasks with gulp. 
+
 ## Technology Stack
+
 * Typescript 
 * JSPM 
 * Angular 1.x
@@ -11,7 +14,8 @@
 * Protractor
 * Gulp 
 
-### Installing
+### Installing dependencies
+
 ```
 npm install gulp jspm typescript tsd -g
 ```
@@ -22,10 +26,11 @@ npm install
 
 ### Gulp tasks
 
-Serves sample app from `index.html` to browser with livereload
+Serves sample app from `index.html` to browser with livereload 
 
 ```
-gulp serve
+gulp serve                       # watches *.ts files and reload page with recompile
+gulp serve --watch-js            # watches *.js files and reload page with recompile (useful with IDE TypeScript compilation)
 ```
 
 Generates and serves documentation
@@ -58,7 +63,7 @@ Creates self executable distribution file in `dist/` directory
 gulp build
 ```
 
-Run tests from `test/` directory
+Runs unit tests from `test/unit` directory and end to end tests from `test/e2e`
 
 ```
 gulp test
