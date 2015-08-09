@@ -7,15 +7,16 @@ The only known issue it has is that there is no working TypeScript 1.5 preproces
 
 ### Technology Stack
 -------
-* Typescript 
+* TypeScript 
 * JSPM 
-* Angular 1.x
 * Karma 
 * Mocha 
 * Chaijs 
 * Sinonjs
 * Protractor
 * Gulp 
+* Angular 1.x (animate, cookies, messages, resource, sanitize, toastr, translate, ui-router, ui-bootstrap)
+* Bootstrap from Twitter
 
 ### Requirements
 -------
