@@ -10,8 +10,8 @@ var config = {
   srcDir: path.join(__dirname, 'src'),
   docsDir: path.join(__dirname, 'docs'),
   distDir: path.join(__dirname, 'dist'),
-  tsLintSrcConf: path.join(__dirname, 'src', 'tslint.json'),
-  tsLintTestConf: path.join(__dirname, 'test', 'tslint.json'),
+  tsLintSrcConf: path.join(__dirname, 'tslint.json'),
+  tsLintTestConf: path.join(__dirname, 'tslint.json'),
   watchDir: path.join(__dirname, 'src')
 };
 
@@ -33,10 +33,12 @@ gulp.task('check:tslint:src', require('./tasks/tslint')(gulp, config.srcDir, con
 gulp.task('check:tslint:test', require('./tasks/tslint')(gulp, config.testDir, config.tsLintTestConf));
 gulp.task('check', ['check:jshint', 'check:tslint']);
 
-gulp.task('test:unit', ['compile'], require('./tasks/test')(config.testDir));
-gulp.task('test:e2e', ['serve:e2e', 'compile'], require('./tasks/e2e')(gulp, config));
-gulp.task('test', ['test:unit', 'test:e2e']);
+gulp.task('test:unit', require('./tasks/test')(config.testDir));
+gulp.task('test:e2e', ['serve:e2e'], require('./tasks/e2e')(gulp, config));
+gulp.task('test', ['compile', 'test:unit', 'test:e2e']);
 
 gulp.task('build:dist', require('./tasks/build')(gulp, config));
 gulp.task('build:docs', require('./tasks/typedoc')(gulp, config));
-gulp.task('build', ['build:dist', 'build:doc']);
+gulp.task('build', ['build:dist', 'build:docs']);
+
+gulp.task('default', require('./tasks/default')());
