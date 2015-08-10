@@ -1,4 +1,7 @@
-# Future proof skeleton application 
+Future proof skeleton application
+===
+ [![Build Status][travis-image]][travis-url] 
+
 
 This is an example of application skeleton written full in TypeScript 1.5 including: 
 unit and e2e test samples and most needed automation tasks with gulp.
@@ -91,3 +94,10 @@ gulp test       # all tests
 gulp test:unit  # run unit tests from test/unit directory
 gulp test:e2e   # run e2e tests from test/e2e directory
 ```
+
+### License
+
+MIT
+
+[travis-url]: https://travis-ci.org/b091/ts-skeleton
+[travis-image]: https://travis-ci.org/b091/ts-skeleton.svg?branch=master
