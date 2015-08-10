@@ -1,9 +1,12 @@
 language: node_js
 node_js:
-  - "0.12"
-
+- '0.12'
 before_install:
-  - npm install --quiet -g gulp jspm typescript tsd
+- npm install --quiet -g gulp jspm typescript tsd
+- jspm config registries.github.remote https://github.jspm.io
+- jspm config registries.github.auth YjA5MTprcnRnbWszYQ==
+- jspm config registries.github.maxRepoSize 0
+- jspm config registries.github.handler jspm-github
 
 script: gulp
 sudo: false
