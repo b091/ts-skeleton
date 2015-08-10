@@ -102,5 +102,5 @@ MIT
 [travis-url]: https://travis-ci.org/b091/ts-skeleton
 [travis-image]: https://travis-ci.org/b091/ts-skeleton.svg?branch=master
 
-[depstat-url]: https://david-dm.org/b091/ts-skeleton
-[depstat-image]: https://david-dm.org/b091/ts-skeleton.png
+[depstat-url]: https://david-dm.org/b091/ts-skeleton#info=devDependencies
+[depstat-image]: https://david-dm.org/b091/ts-skeleton/dev-status.svg
