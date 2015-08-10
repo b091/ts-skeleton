@@ -32,6 +32,7 @@
     "phantomjs-polyfill": "0.0.1",
     "portfinder": "^0.4.0",
     "protractor": "^2.1.0",
+    "run-sequence": "^1.1.2",
     "sinon": "^1.15.4",
     "sinon-chai": "^2.8.0",
     "tsd": "^0.6.3",
