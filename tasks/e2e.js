@@ -12,7 +12,7 @@ module.exports = function(gulp, config) {
                 console.log('E2E Testing complete');
                 process.exit();
             })
-            .on('error', function(error) {
+            .on('error', function() {
                 console.log('E2E Tests failed');
                 process.exit(1);
             });

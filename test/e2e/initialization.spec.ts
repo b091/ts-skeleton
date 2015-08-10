@@ -7,19 +7,19 @@ describe('TS Skeleton', () => {
 
   describe('in main display page', () => {
     it('have `nav` element inside body', () => {
-      const canvas = by.css('body nav');
-      const isNavigationPresent = browser.isElementPresent(canvas);
+      const canvas:any = by.css('body nav');
+      const isNavigationPresent:any = browser.isElementPresent(canvas);
 
-      isNavigationPresent.then((present) => {
+      isNavigationPresent.then((present:any) => {
         expect(present).toBe(true);
       });
     });
 
     it('have only one `nav` element inside body', () => {
-      const canvas = by.css('body nav');
-      const findCanvas = browser.findElements(canvas);
+      const canvas:any = by.css('body nav');
+      const findCanvas:any = browser.findElements(canvas);
 
-      findCanvas.then((existingCanvas) => {
+      findCanvas.then((existingCanvas:any) => {
         expect(existingCanvas.length).toEqual(1);
       });
     });
