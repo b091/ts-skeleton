@@ -1,4 +1,4 @@
-Future proof skeleton application
+Future proof application skeleton
 ===
  [![Build Status][travis-image]][travis-url] 
 
