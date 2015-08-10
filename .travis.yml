@@ -19,7 +19,7 @@ before_install:
 
 script:
 - gulp compile
-- gulp test:e2e
+- gulp test:unit
 
 cache:
   directories:
