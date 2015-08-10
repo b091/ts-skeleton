@@ -20,6 +20,6 @@ module.exports = function(gulp, src) {
     }
 
     return function(done) {
-        runTSC(src, done);
+        return runTSC(src, done);
     };
 };
