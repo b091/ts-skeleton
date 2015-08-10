@@ -1,16 +1,17 @@
 System.config({
-  "defaultJSExtensions": true,
-  "transpiler": "typescript",
-  "typescriptOptions": {
+  defaultJSExtensions: true,
+  transpiler: "typescript",
+  typescriptOptions: {
     "module": "amd",
     "experimentalDecorators": true
   },
-  "paths": {
+  paths: {
     "github:*": "vendor/jspm_packages/github/*",
     "npm:*": "vendor/jspm_packages/npm/*",
     "app": "src"
   },
-  "packages": {
+
+  packages: {
     "app": {
       "main": "index",
       "defaultExtension": "ts",
@@ -20,11 +21,9 @@ System.config({
         }
       }
     }
-  }
-});
+  },
 
-System.config({
-  "map": {
+  map: {
     "angular": "github:angular/bower-angular@1.4.3",
     "angular-animate": "github:angular/bower-angular-animate@1.4.3",
     "angular-cookies": "github:angular/bower-angular-cookies@1.4.3",
