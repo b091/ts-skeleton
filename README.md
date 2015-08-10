@@ -1,6 +1,6 @@
 Future proof application skeleton
 ===
- [![Build Status][travis-image]][travis-url] 
+ [![Build Status][travis-image]][travis-url]  [![Dependency Status][depstat-image]][depstat-url]
 
 
 This is an example of application skeleton written full in TypeScript 1.5 including: 
@@ -101,3 +101,6 @@ MIT
 
 [travis-url]: https://travis-ci.org/b091/ts-skeleton
 [travis-image]: https://travis-ci.org/b091/ts-skeleton.svg?branch=master
+
+[depstat-url]: https://david-dm.org/b091/ts-skeleton
+[depstat-image]: https://david-dm.org/b091/ts-skeleton.png
