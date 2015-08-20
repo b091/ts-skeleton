@@ -43,7 +43,7 @@ System.config({
     "core-js": "npm:core-js@0.9.18",
     "css": "github:systemjs/plugin-css@0.1.13",
     "ts": "github:frankwallis/plugin-typescript@2.0.4",
-    "typescript": "npm:typescript@1.5.3",
+    "typescript": "npm:typescript@1.6.0-dev.20150820",
     "github:angular-translate/bower-angular-translate-loader-static-files@2.7.2": {
       "angular-translate": "github:angular-translate/bower-angular-translate@2.7.2"
     },
@@ -193,6 +193,15 @@ System.config({
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
     },
     "npm:typescript@1.5.3": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "child_process": "github:jspm/nodelibs-child_process@0.1.0",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "os": "github:jspm/nodelibs-os@0.1.0",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.1",
+      "readline": "github:jspm/nodelibs-readline@0.1.0"
+    },
+    "npm:typescript@1.6.0-dev.20150820": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "child_process": "github:jspm/nodelibs-child_process@0.1.0",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
