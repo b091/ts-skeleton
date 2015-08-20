@@ -31,6 +31,6 @@ angular.module('app', [
   'pascalprecht.translate',
 ]);
 
-const App:angular.IAngularStatic = angular;
+const App:ng.IAngularStatic = angular;
 
 export {App};

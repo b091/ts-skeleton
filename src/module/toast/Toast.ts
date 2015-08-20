@@ -2,7 +2,7 @@ import {App} from '../../App';
 import 'angular-toastr';
 import 'angular-toastr/angular-toastr.css!';
 
-const module:angular.IModule = App.module('app.toast', ['toastr']);
+const module:ng.IModule = App.module('app.toast', ['toastr']);
 
 module.config((toastrConfig:any) => {
   App.extend(toastrConfig, {
