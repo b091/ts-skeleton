@@ -1,7 +1,7 @@
 import {MyDirectiveCtrl} from './MyDirectiveCtrl';
 import {directive} from '../../decorators/directive';
 
-@directive("$location", "$rootScope")
+@directive('$location', '$rootScope')
 export class MyDirective {
 
   public controller:any = MyDirectiveCtrl;
