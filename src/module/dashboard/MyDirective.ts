@@ -12,11 +12,11 @@ export class MyDirective {
     code: '='
   };
 
-  public link(scope:ng.IScope, element:ng.IAugmentedJQuery, attrs:ng.IAttributes):void {
-    console.log('Link', scope, element, attrs);
-  }
-
   constructor(private $location:ng.ILocationService, private $rootScope:ng.IScope) {
     console.log('Dependency injection', $location, $rootScope);
+  }
+
+  public link(scope:ng.IScope, element:ng.IAugmentedJQuery, attrs:ng.IAttributes):void {
+    console.log('Link', scope, element, attrs, this);
   }
 }
