@@ -5,4 +5,4 @@ import {StoryService} from './../story/StoryService';
 const module:ng.IModule = App.module('app.story', []);
 
 module.service('storyService', StoryService);
-module.directive('storyBox', [StoryBoxDirective]);
+module.directive('storyBox', <any>StoryBoxDirective);
