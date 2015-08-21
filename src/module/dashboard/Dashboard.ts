@@ -1,6 +1,6 @@
 import {App} from '../../App';
 import {DashboardCtrl} from './DashboardCtrl';
-import {StoryBoxDirective} from './../dashboard/StoryBoxDirectiveCtrl';
+import {StoryBoxDirective} from './../dashboard/StoryBoxDirective';
 import {StoryService} from './StoryService';
 
 const module:ng.IModule = App.module('app.dashboard', []);
