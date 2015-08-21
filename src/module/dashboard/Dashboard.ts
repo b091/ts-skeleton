@@ -1,11 +1,10 @@
 import {App} from '../../App';
 import {DashboardCtrl} from './DashboardCtrl';
-import {MyDirective} from './../dashboard/MyDirective';
+import '../story/Story';
 
-const module:ng.IModule = App.module('app.dashboard', []);
+const module:ng.IModule = App.module('app.dashboard', ['app.story']);
 
 module.controller('DashboardCtrl', DashboardCtrl);
-module.directive('myDirective', <any>MyDirective);
 
 module.config(($stateProvider:angular.ui.IStateProvider) => {
   $stateProvider.state('home', {

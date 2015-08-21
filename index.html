@@ -1,26 +1,31 @@
 <!doctype html>
 <html class="no-js">
 <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="src/style/style.css" type="text/css">
 </head>
 <body>
 
 <nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#/home">Home</a>
-            <a class="navbar-brand" href="#/login">Login</a>
-            <a class="navbar-brand" href="#/logout">Logout</a>
-        </div>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#/home">Dashboard</a>
     </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#/login">Login</a></li>
+      <li><a href="#/logout">Logout</a></li>
+    </ul>
+  </div>
 </nav>
 
-<ui-view name="application"></ui-view>
+<div class="container">
+  <ui-view name="application"></ui-view>
+</div>
 
 <script src="vendor/jspm_packages/system.js"></script>
 <script src="jspm.conf.js"></script>
 <script language="JavaScript">
-    System.import('./src/index');
+  System.import('./src/index');
 </script>
 
 </body>

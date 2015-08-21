@@ -1,0 +1,29 @@
+.story-list li {
+  list-style: none;
+}
+
+.story-list {
+  overflow: hidden;
+}
+
+.story-list li {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  height: 22em;
+  width: 24em;
+  background-color: rgba(253, 255, 255, 1);
+  -moz-box-shadow: 5px 5px 7px rgba(33, 33, 33, 1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, .7);
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, .7);
+  margin: 1em;
+  float: left;
+}
+
+.story-list h3 {
+  padding-left: 0.4em;
+}
+
+.story-list div {
+  padding: 1em;
+}
