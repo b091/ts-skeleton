@@ -1,5 +1,4 @@
 import {directive} from '../../decorators/directive';
-import {Story} from './StoryService';
 
 @directive('$location', '$rootScope')
 export class StoryBoxDirective implements ng.IDirective {
