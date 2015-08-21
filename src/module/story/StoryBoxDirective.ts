@@ -2,7 +2,7 @@ import {directive} from '../../decorators/directive';
 import {Story} from './StoryService';
 
 @directive('$location', '$rootScope')
-export class StoryBoxDirective {
+export class StoryBoxDirective implements ng.IDirective {
 
   public templateUrl:string = 'src/module/story/view/story-box.html';
   public restrict:string = 'EA';
