@@ -1,15 +1,15 @@
-import {MyDirectiveCtrl} from './MyDirectiveCtrl';
+import {StoryBoxDirectiveCtrl} from './StoryBoxDirectiveCtrl';
 import {directive} from '../../decorators/directive';
 
 @directive('$location', '$rootScope')
-export class MyDirective {
+export class StoryBoxDirective {
 
-  public controller:any = MyDirectiveCtrl;
+  public controller:any = StoryBoxDirectiveCtrl;
   public controllerAs:string = 'vm';
-  public templateUrl:string = 'src/module/dashboard/view/myDirective.html';
+  public templateUrl:string = 'src/module/dashboard/view/story-box.html';
   public restrict:string = 'EA';
   public scope:any = {
-    code: '='
+    story: '='
   };
 
   constructor(private $location:ng.ILocationService, private $rootScope:ng.IScope) {

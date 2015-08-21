@@ -6,7 +6,9 @@ export function directive(...values:string[]):any {
         const child:Object = new ctor;
         const result:Object = classConstructor.apply(child, args);
         return typeof result === 'object' ? result : child;
-      })(target, args, () => { return null; });
+      })(target, args, () => {
+        return null;
+      });
     };
     directive.$inject = values;
     return directive;

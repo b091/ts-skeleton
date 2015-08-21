@@ -1,5 +1,9 @@
-<h1>Dashboard</h1>
+<h1>{{controller.title}}</h1>
 
-Hello, {{controller.title}}!
+<h5>Hello, Xyz!</h5>
 
-<my-directive></my-directive>
+<ul class="story-list">
+  <li ng-repeat="story in controller.stories">
+    <story-box story="story"></story-box>
+  </li>
+</ul>
