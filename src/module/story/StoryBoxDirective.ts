@@ -10,7 +10,7 @@ export class StoryBoxDirective {
     story: '='
   };
 
-  public link:Function = (scope:any, element:ng.IAugmentedJQuery, attrs:ng.IAttributes):void => {
+  public link:Function = (scope:ng.IScope, element:ng.IAugmentedJQuery, attrs:ng.IAttributes):void => {
     // console.info(scope, element, attrs, this.$location);
     scope.$watch('test', () => {
       return null;
