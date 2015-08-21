@@ -6,7 +6,7 @@ export class StoryBoxDirective {
 
   public controller:any = StoryBoxDirectiveCtrl;
   public controllerAs:string = 'vm';
-  public templateUrl:string = 'src/module/dashboard/view/story-box.html';
+  public templateUrl:string = 'src/module/story/view/story-box.html';
   public restrict:string = 'EA';
   public scope:any = {
     story: '='

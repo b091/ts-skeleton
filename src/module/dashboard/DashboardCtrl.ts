@@ -1,4 +1,4 @@
-import {Story, StoryService} from './StoryService';
+import {Story, StoryService} from './../story/StoryService';
 
 export class DashboardCtrl {
 
