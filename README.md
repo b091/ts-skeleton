@@ -10,7 +10,12 @@ The only known issue it has is that there is no working TypeScript 1.5 preproces
 
 ### Example
 -------
-Example contains sample implementation of Angular: controller, service, directive.
+Example contains simple implementation of Angular: 
+* controller 
+* service
+* directive
+* ui router
+* toastr
 
 ### Technology Stack
 -------
@@ -22,7 +27,7 @@ Example contains sample implementation of Angular: controller, service, directiv
 * Sinonjs
 * Protractor
 * Gulp 
-* Angular 1.x (animate, cookies, messages, resource, sanitize, toastr, translate, ui-router, ui-bootstrap)
+* Angular 1.x
 * Bootstrap from Twitter
 
 ### Requirements
