@@ -5,7 +5,7 @@ export function directive(...values:string[]):any {
         ctor.prototype = classConstructor.prototype;
         const child:Object = new ctor;
         const result:Object = classConstructor.apply(child, args);
-        return typeof result === 'object' ? result : child;
+        return typeof result === "object" ? result : child;
       })(target, args, () => {
         return null;
       });

@@ -9,26 +9,26 @@
 
 /* tslint:disable:variable-name */
 
-import * as angular from 'angular';
-import 'angular-ui-router';
-import 'angular-animate';
-import 'angular-cookies';
-import 'angular-messages';
-import 'angular-resource';
-import 'angular-sanitize';
-import 'angular-translate';
+import * as angular from "angular";
+import "angular-ui-router";
+import "angular-animate";
+import "angular-cookies";
+import "angular-messages";
+import "angular-resource";
+import "angular-sanitize";
+import "angular-translate";
 
-import 'bootstrap';
-import 'bootstrap/css/bootstrap.css!';
+import "bootstrap";
+import "bootstrap/css/bootstrap.css!";
 
-angular.module('app', [
-  'ui.router',
-  'ngAnimate',
-  'ngCookies',
-  'ngMessages',
-  'ngResource',
-  'ngSanitize',
-  'pascalprecht.translate',
+angular.module("app", [
+  "ui.router",
+  "ngAnimate",
+  "ngCookies",
+  "ngMessages",
+  "ngResource",
+  "ngSanitize",
+  "pascalprecht.translate",
 ]);
 
 const App:ng.IAngularStatic = angular;
