@@ -1,12 +1,12 @@
-import {Story, StoryService} from './../story/StoryService';
+import {Story, StoryService} from "./../story/StoryService";
 
 export class DashboardCtrl {
 
-  public title:string = 'Dashboard';
+  public title:string = "Dashboard";
   public stories:Story[];
 
   constructor(private toastr:Toastr, private storyService:StoryService) {
-    toastr.success('Salute!', 'Toastr fun!');
+    toastr.success("Salute!", "Toastr fun!");
     this.stories = storyService.model;
     storyService.getAll();
   }

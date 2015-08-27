@@ -1,29 +1,29 @@
-import {App} from '../../App';
-import {LoginCtrl} from './LoginCtrl';
-import {LogoutCtrl} from './LogoutCtrl';
+import {App} from "../../App";
+import {LoginCtrl} from "./LoginCtrl";
+import {LogoutCtrl} from "./LogoutCtrl";
 
-const module:ng.IModule = App.module('app.auth', []);
+const module:ng.IModule = App.module("app.auth", []);
 
-module.controller('Login', LoginCtrl);
-module.controller('Logout', LogoutCtrl);
+module.controller("Login", LoginCtrl);
+module.controller("Logout", LogoutCtrl);
 
 module.config(($stateProvider:ng.ui.IStateProvider) => {
-  $stateProvider.state('login', {
-    url: '/login',
+  $stateProvider.state("login", {
+    url: "/login",
     views: {
       application: {
-        templateUrl: 'src/module/auth/view/login.html',
+        templateUrl: "src/module/auth/view/login.html",
         controller: LoginCtrl,
-        controllerAs: 'controller'
+        controllerAs: "controller"
       }
     }
-  }).state('logout', {
-    url: '/logout',
+  }).state("logout", {
+    url: "/logout",
     views: {
       application: {
-        templateUrl: 'src/module/auth/view/logout.html',
+        templateUrl: "src/module/auth/view/logout.html",
         controller: LogoutCtrl,
-        controllerAs: 'controller'
+        controllerAs: "controller"
       }
     }
   });
