@@ -16,7 +16,7 @@ module.exports = function(gulp, config) {
                 var moduleName = 'app';
                 var buildConfig = {
                     sfxFormat: 'amd',
-                    minify: true,
+                    minify: false,
                     sourceMaps: true
                 };
                 return builder.buildSFX(moduleName, outFile, buildConfig);
