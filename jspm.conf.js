@@ -8,19 +8,7 @@ System.config({
   paths: {
     "github:*": "vendor/jspm_packages/github/*",
     "npm:*": "vendor/jspm_packages/npm/*",
-    "app": "src"
-  },
-
-  packages: {
-    "app": {
-      "main": "index",
-      "defaultExtension": "ts",
-      "meta": {
-        "*.ts": {
-          "loader": "ts"
-        }
-      }
-    }
+    "app": "src/index"
   },
 
   map: {
