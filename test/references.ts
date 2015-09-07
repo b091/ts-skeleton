@@ -5,6 +5,8 @@
 /// <reference path="../vendor/typings/angular-protractor/angular-protractor.d.ts" />
 
 // protractor missing declaration
+// noinspection TsLint
 var startLocalhost:any;
 // protractor..
+// noinspection TsLint
 var expect:any;

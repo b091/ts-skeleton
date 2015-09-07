@@ -1,4 +1,3 @@
-import {App} from "../../App";
 import {EndpointService} from "../../services/EndpointService";
 
 export class StoryService {
