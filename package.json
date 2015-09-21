@@ -67,6 +67,7 @@
       "bootstrap": "github:twbs/bootstrap@^3.3.5",
       "clean-css": "npm:clean-css@^3.3.8",
       "css": "github:systemjs/plugin-css@^0.1.13",
+      "reflect-metadata": "npm:reflect-metadata@^0.1.1",
       "ts": "github:frankwallis/plugin-typescript@^2.0.17"
     },
     "devDependencies": {

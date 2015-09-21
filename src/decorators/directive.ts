@@ -1,3 +1,7 @@
+import "../imports/Reflect";
+
+console.log(Reflect);
+
 export function directive(...values:string[]):any {
   return (target:Function) => {
     const directive:Function = (...args:any[]):Object => {
