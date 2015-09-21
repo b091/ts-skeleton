@@ -5,7 +5,7 @@ module.exports = function(gulp, src) {
         var cp = require('child_process');
         var path = require('path');
 
-        var tscJs = path.join(process.cwd(), 'node_modules/typescript/bin/tsc.js');
+        var tscJs = path.join(process.cwd(), 'node_modules/typescript/bin/tsc');
         var childProcess = cp.spawn('node', [tscJs, '-p', directory], {cwd: process.cwd()});
 
         childProcess.stdout.on('data', function(data) {

@@ -9,8 +9,8 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "chai": "^3.2.0",
-    "del": "^2.0.0",
+    "chai": "^3.3.0",
+    "del": "^2.0.2",
     "gulp": "^3.9.0",
     "gulp-jshint": "^1.11.2",
     "gulp-protractor": "^1.0.0",
@@ -20,24 +20,24 @@
     "gulp-webserver": "^0.9.1",
     "jshint-stylish": "^2.0.1",
     "jspm": "^0.16.2",
-    "karma": "^0.13.7",
+    "karma": "^0.13.9",
     "karma-chai-sinon": "^0.1.5",
-    "karma-coverage": "^0.5.1",
+    "karma-coverage": "^0.5.2",
     "karma-jspm": "2.0.1",
     "karma-junit-reporter": "~0.3.4",
     "karma-mocha": "^0.2.0",
     "karma-phantomjs-launcher": "^0.2.1",
-    "mocha": "^2.3.1",
-    "phantomjs": "^1.9.7",
+    "mocha": "^2.3.3",
+    "phantomjs": "^1.9.18",
     "phantomjs-polyfill": "0.0.1",
     "portfinder": "^0.4.0",
-    "protractor": "^2.1.0",
+    "protractor": "^2.2.0",
     "run-sequence": "^1.1.2",
     "sinon": "^1.16.1",
     "sinon-chai": "^2.8.0",
     "tsd": "^0.6.4",
-    "tslint": "^2.4.5",
-    "typescript": "^1.5.3"
+    "tslint": "^2.5.0",
+    "typescript": "^1.6.2"
   },
   "engines": {
     "node": ">=0.12.0"
@@ -67,13 +67,13 @@
       "bootstrap": "github:twbs/bootstrap@^3.3.5",
       "clean-css": "npm:clean-css@^3.3.8",
       "css": "github:systemjs/plugin-css@^0.1.13",
-      "ts": "github:frankwallis/plugin-typescript@^2.0.4"
+      "ts": "github:frankwallis/plugin-typescript@^2.0.17"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.6.4",
       "babel-runtime": "npm:babel-runtime@^5.6.4",
       "core-js": "npm:core-js@^0.9.17",
-      "typescript": "npm:typescript@^1.6.0-dev.20150818"
+      "typescript": "npm:typescript@^1.6.2"
     }
   }
 }

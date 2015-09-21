@@ -12,52 +12,52 @@ System.config({
   },
 
   map: {
-    "angular": "github:angular/bower-angular@1.4.4",
-    "angular-animate": "github:angular/bower-angular-animate@1.4.4",
-    "angular-cookies": "github:angular/bower-angular-cookies@1.4.4",
-    "angular-messages": "github:angular/bower-angular-messages@1.4.4",
-    "angular-resource": "github:angular/bower-angular-resource@1.4.4",
-    "angular-sanitize": "github:angular/bower-angular-sanitize@1.4.4",
-    "angular-toastr": "github:Foxandxss/angular-toastr@1.4.1",
-    "angular-translate": "github:angular-translate/bower-angular-translate@2.7.2",
-    "angular-translate-loader-static-files": "github:angular-translate/bower-angular-translate-loader-static-files@2.7.2",
-    "angular-translate-loader-url": "github:angular-translate/bower-angular-translate-loader-url@2.7.2",
-    "angular-ui-bootstrap": "github:angular-ui/bootstrap@0.13.3",
+    "angular": "github:angular/bower-angular@1.4.6",
+    "angular-animate": "github:angular/bower-angular-animate@1.4.6",
+    "angular-cookies": "github:angular/bower-angular-cookies@1.4.6",
+    "angular-messages": "github:angular/bower-angular-messages@1.4.6",
+    "angular-resource": "github:angular/bower-angular-resource@1.4.6",
+    "angular-sanitize": "github:angular/bower-angular-sanitize@1.4.6",
+    "angular-toastr": "github:Foxandxss/angular-toastr@1.5.0",
+    "angular-translate": "github:angular-translate/bower-angular-translate@2.8.0",
+    "angular-translate-loader-static-files": "github:angular-translate/bower-angular-translate-loader-static-files@2.8.0",
+    "angular-translate-loader-url": "github:angular-translate/bower-angular-translate-loader-url@2.8.0",
+    "angular-ui-bootstrap": "github:angular-ui/bootstrap@0.13.4",
     "angular-ui-router": "github:angular-ui/ui-router@0.2.15",
-    "babel": "npm:babel-core@5.8.22",
-    "babel-runtime": "npm:babel-runtime@5.8.20",
+    "babel": "npm:babel-core@5.8.25",
+    "babel-runtime": "npm:babel-runtime@5.8.24",
     "bootstrap": "github:twbs/bootstrap@3.3.5",
-    "clean-css": "npm:clean-css@3.3.9",
+    "clean-css": "npm:clean-css@3.4.4",
     "core-js": "npm:core-js@0.9.18",
-    "css": "github:systemjs/plugin-css@0.1.13",
-    "ts": "github:frankwallis/plugin-typescript@2.0.4",
-    "typescript": "npm:typescript@1.6.0-dev.20150820",
-    "github:angular-translate/bower-angular-translate-loader-static-files@2.7.2": {
-      "angular-translate": "github:angular-translate/bower-angular-translate@2.7.2"
+    "css": "github:systemjs/plugin-css@0.1.17",
+    "ts": "github:frankwallis/plugin-typescript@2.0.17",
+    "typescript": "npm:typescript@1.6.2",
+    "github:angular-translate/bower-angular-translate-loader-static-files@2.8.0": {
+      "angular-translate": "github:angular-translate/bower-angular-translate@2.8.0"
     },
-    "github:angular-translate/bower-angular-translate@2.7.2": {
-      "angular": "github:angular/bower-angular@1.4.4"
+    "github:angular-translate/bower-angular-translate@2.8.0": {
+      "angular": "github:angular/bower-angular@1.4.6"
     },
     "github:angular-ui/ui-router@0.2.15": {
-      "angular": "github:angular/bower-angular@1.4.4"
+      "angular": "github:angular/bower-angular@1.4.6"
     },
-    "github:angular/bower-angular-animate@1.4.4": {
-      "angular": "github:angular/bower-angular@1.4.4"
+    "github:angular/bower-angular-animate@1.4.6": {
+      "angular": "github:angular/bower-angular@1.4.6"
     },
-    "github:angular/bower-angular-cookies@1.4.4": {
-      "angular": "github:angular/bower-angular@1.4.4"
+    "github:angular/bower-angular-cookies@1.4.6": {
+      "angular": "github:angular/bower-angular@1.4.6"
     },
-    "github:angular/bower-angular-sanitize@1.4.4": {
-      "angular": "github:angular/bower-angular@1.4.4"
+    "github:angular/bower-angular-sanitize@1.4.6": {
+      "angular": "github:angular/bower-angular@1.4.6"
     },
-    "github:frankwallis/plugin-typescript@2.0.4": {
-      "typescript": "npm:typescript@1.5.3"
+    "github:frankwallis/plugin-typescript@2.0.17": {
+      "typescript": "npm:typescript@1.6.2"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
     "github:jspm/nodelibs-buffer@0.1.0": {
-      "buffer": "npm:buffer@3.4.2"
+      "buffer": "npm:buffer@3.5.0"
     },
     "github:jspm/nodelibs-events@0.1.1": {
       "events": "npm:events@1.0.2"
@@ -103,15 +103,15 @@ System.config({
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
     },
-    "npm:babel-runtime@5.8.20": {
+    "npm:babel-runtime@5.8.24": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
-    "npm:buffer@3.4.2": {
+    "npm:buffer@3.5.0": {
       "base64-js": "npm:base64-js@0.0.8",
       "ieee754": "npm:ieee754@1.1.6",
       "is-array": "npm:is-array@1.0.1"
     },
-    "npm:clean-css@3.3.9": {
+    "npm:clean-css@3.4.4": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "commander": "npm:commander@2.8.1",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
@@ -179,24 +179,6 @@ System.config({
     },
     "npm:string_decoder@0.10.31": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
-    },
-    "npm:typescript@1.5.3": {
-      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
-      "child_process": "github:jspm/nodelibs-child_process@0.1.0",
-      "fs": "github:jspm/nodelibs-fs@0.1.2",
-      "os": "github:jspm/nodelibs-os@0.1.0",
-      "path": "github:jspm/nodelibs-path@0.1.0",
-      "process": "github:jspm/nodelibs-process@0.1.1",
-      "readline": "github:jspm/nodelibs-readline@0.1.0"
-    },
-    "npm:typescript@1.6.0-dev.20150820": {
-      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
-      "child_process": "github:jspm/nodelibs-child_process@0.1.0",
-      "fs": "github:jspm/nodelibs-fs@0.1.2",
-      "os": "github:jspm/nodelibs-os@0.1.0",
-      "path": "github:jspm/nodelibs-path@0.1.0",
-      "process": "github:jspm/nodelibs-process@0.1.1",
-      "readline": "github:jspm/nodelibs-readline@0.1.0"
     },
     "npm:url@0.10.3": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",

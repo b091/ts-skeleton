@@ -3,10 +3,9 @@ Future proof application skeleton
  [![Build Status][travis-image]][travis-url]  [![Dependency Status][depstat-image]][depstat-url]
 
 
-This is an example of application skeleton written full in TypeScript 1.5 including: 
+This is an example of application skeleton written full in TypeScript 1.6 including: 
 unit and e2e test samples and most needed automation tasks with gulp.
 
-The only known issue it has is that there is no working TypeScript 1.5 preprocessor for karma. And because of that you need to stop karma server after source change and before rerun tests in IDE such as WebStorm. 
 
 ### Example
 -------
