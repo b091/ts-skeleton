@@ -3,6 +3,7 @@ System.config({
   transpiler: "typescript",
   typescriptOptions: {
     "module": "amd",
+    "emitDecoratorMetadata": true,
     "experimentalDecorators": true
   },
   paths: {

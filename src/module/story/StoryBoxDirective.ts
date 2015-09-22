@@ -1,6 +1,6 @@
 import {directive} from "../../decorators/directive";
 
-@directive("$location", "$rootScope")
+@directive()
 export class StoryBoxDirective implements ng.IDirective {
 
   public templateUrl:string = "src/module/story/view/story-box.html";
@@ -16,7 +16,7 @@ export class StoryBoxDirective implements ng.IDirective {
     });
   };
 
-  constructor(private $location:ng.ILocationService, private $rootScope:ng.IScope) {
+  constructor(private $location:string, private $rootScope:ng.IScope) {
     // console.log("Dependency injection", $location, $rootScope);
   }
 
