@@ -6,6 +6,7 @@ const module:ng.IModule = App.module("app.dashboard", ["app.story"]);
 
 module.controller("DashboardCtrl", DashboardCtrl);
 
+// @ngInject
 module.config(($stateProvider:angular.ui.IStateProvider) => {
   $stateProvider.state("home", {
     url: "/home",

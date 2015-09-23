@@ -13,6 +13,7 @@ export class MenuBoxDirective implements ng.IDirective {
     return null;
   };
 
+  // @ngInject
   constructor(private $location:ng.ILocationService, private $rootScope:ng.IScope) {
 
   }

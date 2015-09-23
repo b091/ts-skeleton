@@ -16,6 +16,7 @@ export class StoryBoxDirective implements ng.IDirective {
     });
   };
 
+  // @ngInject
   constructor(private $location:ng.ILocationService, private $rootScope:ng.IScope) {
     // console.log("Dependency injection", $location, $rootScope);
   }

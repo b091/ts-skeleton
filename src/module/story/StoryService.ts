@@ -5,6 +5,7 @@ export class StoryService {
   public model:Story[] = [];
   private moduleName:string = "stories";
 
+  // @ngInject
   constructor(private endpointService:EndpointService, private $http:ng.IHttpService) {
   }
 

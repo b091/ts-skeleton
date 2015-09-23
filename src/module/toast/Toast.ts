@@ -4,6 +4,7 @@ import "angular-toastr/angular-toastr.css!";
 
 const module:ng.IModule = App.module("app.toast", ["toastr"]);
 
+// @ngInject
 module.config((toastrConfig:any) => {
   App.extend(toastrConfig, {
     templates: {

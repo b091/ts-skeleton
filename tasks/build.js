@@ -16,7 +16,7 @@ module.exports = function(gulp, config) {
                 var moduleName = 'app';
                 var buildConfig = {
                     format: 'amd',
-                    minify: false,
+                    minify: true,
                     sourceMaps: true
                 };
                 return builder.buildStatic(moduleName, outFile, buildConfig);

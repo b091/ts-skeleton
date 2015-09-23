@@ -2,6 +2,7 @@ export class LoginCtrl {
 
   public title:string;
 
+  // @ngInject
   constructor(private $filter:ng.IFilterService, private $state:ng.ui.IStateService) {
     this.title = "Login Panel";
 

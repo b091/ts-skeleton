@@ -7,6 +7,7 @@ const module:ng.IModule = App.module("app.auth", []);
 module.controller("Login", LoginCtrl);
 module.controller("Logout", LogoutCtrl);
 
+// @ngInject
 module.config(($stateProvider:ng.ui.IStateProvider) => {
   $stateProvider.state("login", {
     url: "/login",
