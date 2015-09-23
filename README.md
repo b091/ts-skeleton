@@ -32,8 +32,8 @@ Example contains simple implementation of Angular:
 
 ### Requirements
 -------
-* nodejs 0.12.+
-* npm 2.13.+
+* nodejs 4.+
+* npm 3.+
 
 ### Installing dependencies
 -------
