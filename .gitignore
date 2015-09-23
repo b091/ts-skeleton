@@ -3,8 +3,8 @@
 .idea/
 atlassian-ide-plugin.xml
 docs
-dist
 !dist/index.html
+dist
 node_modules
 npm-debug.log
 report
