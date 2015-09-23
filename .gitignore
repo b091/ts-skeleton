@@ -4,6 +4,7 @@
 atlassian-ide-plugin.xml
 docs
 dist
+!dist/index.html
 node_modules
 npm-debug.log
 report
