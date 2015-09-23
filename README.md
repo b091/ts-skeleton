@@ -4,7 +4,7 @@ Future proof application skeleton
 
 
 This is an example of application skeleton written full in TypeScript 1.6 including: 
-unit and e2e test samples and most needed automation tasks with gulp.
+unit and e2e test samples, bundling (minification, ng-annotate) and most needed automation tasks with gulp.
 
 
 ### Example
@@ -15,6 +15,7 @@ Example contains simple implementation of Angular:
 * directive
 * ui router
 * toastr
+* ngannotate
 
 ### Technology Stack
 -------
@@ -55,6 +56,7 @@ Serve application or documentation to browser
 ```
 gulp serve            # Serves application, watch *.ts, recompile, reload
 gulp serve --watch-js # Serves application, watch *.js, recompile, reload (useful with TypeScript IDE compilation)
+gulp serve:dist       # Serves application from bundled dist file
 gulp serve:docs       # Generates and serves documentation
 ```
 
@@ -69,6 +71,13 @@ gulp check:jshint       # checks gulp tasks and gulpfile (only not generated js 
 gulp check:tslint       # checks TypeScript files from src/ and test/ directory
 gulp check:tslint:src   # checks TypeScript files from src/ directory
 gulp check:tslint:test  # checks TypeScript files from src/ directory
+```
+
+Angular Bundling 
+
+```
+gulp ng:directives      # bundles directives from templateUrl to template
+gulp ng:annotate        # adds ng annotate to typescript output
 ```
 
 Remove compiled files
