@@ -15,11 +15,11 @@ module.exports = function(gulp, config) {
             .then(function() {
                 var moduleName = 'app';
                 var buildConfig = {
-                    sfxFormat: 'amd',
+                    format: 'amd',
                     minify: false,
                     sourceMaps: true
                 };
-                return builder.buildSFX(moduleName, outFile, buildConfig);
+                return builder.buildStatic(moduleName, outFile, buildConfig);
             })
             .then(function() {
                 var mapFile = outFile + '.map';
