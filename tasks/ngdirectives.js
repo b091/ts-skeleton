@@ -1,8 +1,7 @@
-'use strict';
-module.exports = function(gulp, config) {
-    return function() {
-        var directiveReplace = require('gulp-directive-replace');
-        var path = require('path');
+module.exports = (gulp, config) => {
+    return () => {
+        const directiveReplace = require('gulp-directive-replace');
+        const path = require('path');
 
         return gulp.src(path.join(config.srcDir, '**', '*.js'))
             .pipe(directiveReplace())

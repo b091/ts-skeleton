@@ -1,8 +1,7 @@
-'use strict';
-module.exports = function(gulp, directory, configuration) {
-    return function() {
-        var path = require('path');
-        var tslint = require('gulp-tslint');
+module.exports = (gulp, directory, configuration) => {
+    return () => {
+        const path = require('path');
+        const tslint = require('gulp-tslint');
 
         return gulp.src([
             path.join(directory, '**', '*.ts'),
