@@ -6,13 +6,13 @@ module.exports = (gulp, src) => {
         const tscJs = path.join(process.cwd(), 'node_modules/typescript/bin/tsc');
         const childProcess = cp.spawn('node', [tscJs, '-p', directory], {cwd: process.cwd()});
 
-        childProcess.stdout.on('data', function(data) {
+        childProcess.stdout.on('data', (data) => {
             console.log(data.toString());
         });
-        childProcess.stderr.on('data', function(data) {
+        childProcess.stderr.on('data', (data) => {
             console.log(data.toString());
         });
-        childProcess.on('close', function() {
+        childProcess.on('close', () => {
             done();
         });
     }
