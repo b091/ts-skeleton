@@ -1,5 +1,5 @@
 'use strict';
-module.exports = function(gulp, serverRootDir, watchDir, openBrowser, fallback) {
+module.exports = function(gulp, serverRootDir, watchDir, openBrowser) {
     var fs = require('fs');
 
     return function() {
@@ -24,7 +24,6 @@ module.exports = function(gulp, serverRootDir, watchDir, openBrowser, fallback) 
                         enable: liveReload(),
                         filter: filterWatchFilesForLivereload
                     },
-                    fallback: 'index-packed.html',
                     open: openBrowser,
                     port: port
                 }));
