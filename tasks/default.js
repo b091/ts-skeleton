@@ -5,5 +5,5 @@ module.exports = () => {
         return runSequence('check', 'compile', 'test:unit', 'test:e2e', () => {
             console.log('Done');
         });
-    }
+    };
 };

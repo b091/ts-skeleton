@@ -20,5 +20,5 @@ module.exports = (gulp, src) => {
 
     return (done) => {
         return runTSC(src, done);
-    }
+    };
 };
