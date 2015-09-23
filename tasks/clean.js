@@ -1,4 +1,3 @@
-'use strict';
 module.exports = (gulp, dir) => {
     return () => {
         const del = require('del');

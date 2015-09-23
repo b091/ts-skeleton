@@ -1,4 +1,3 @@
-'use strict';
 module.exports = (gulp, config) => {
     return () => {
         const ngAnnotate = require('gulp-ng-annotate');

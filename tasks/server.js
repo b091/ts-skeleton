@@ -1,4 +1,3 @@
-'use strict';
 module.exports = (gulp, serverRootDir, watchDir, openBrowser) => {
     var fs = require('fs');
 

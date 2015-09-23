@@ -1,4 +1,3 @@
-'use strict';
 module.exports = (gulp, src) => {
 
     function runTSC(directory, done) {

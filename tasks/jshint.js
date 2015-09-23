@@ -1,4 +1,3 @@
-'use strict';
 module.exports = (gulp, config) => {
     return () => {
         const jsHint = require('gulp-jshint');

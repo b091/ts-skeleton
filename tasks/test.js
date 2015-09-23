@@ -1,4 +1,3 @@
-'use strict';
 module.exports = (dir) => {
     return (done) => {
         const path = require('path');

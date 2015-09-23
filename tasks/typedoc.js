@@ -1,4 +1,3 @@
-'use strict';
 module.exports = (gulp, config) => {
     return () => {
         const path = require('path');
