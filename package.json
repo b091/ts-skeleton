@@ -42,7 +42,7 @@
     "typescript": "^1.6.2"
   },
   "engines": {
-    "node": ">=0.12.0"
+    "node": ">=4.1.1"
   },
   "scripts": {
     "test": "gulp test",
@@ -60,7 +60,7 @@
       "angular-messages": "github:angular/bower-angular-messages@^1.4.3",
       "angular-resource": "github:angular/bower-angular-resource@^1.4.3",
       "angular-sanitize": "github:angular/bower-angular-sanitize@^1.4.3",
-      "angular-toastr": "github:Foxandxss/angular-toastr@^1.4.1",
+      "angular-toastr": "github:Foxandxss/angular-toastr@^1.5.0",
       "angular-translate": "github:angular-translate/bower-angular-translate@^2.7.2",
       "angular-translate-loader-static-files": "github:angular-translate/bower-angular-translate-loader-static-files@^2.7.2",
       "angular-translate-loader-url": "github:angular-translate/bower-angular-translate-loader-url@^2.7.2",

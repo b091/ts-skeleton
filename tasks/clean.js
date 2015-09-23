@@ -1,8 +1,7 @@
-'use strict';
-module.exports = function(gulp, dir) {
-    return function() {
-        var del = require('del');
-        var path = require('path');
+module.exports = (gulp, dir) => {
+    return () => {
+        const del = require('del');
+        const path = require('path');
 
         return del([
             path.join(dir, '**', '*.js'),
