@@ -1,8 +1,8 @@
 'use strict';
-var gulp = require('gulp');
-var path = require('path');
+const gulp = require('gulp');
+const path = require('path');
 
-var config = {
+const config = {
     projectDir: __dirname,
     configDir: path.join(__dirname, 'config'),
     taskDir: path.join(__dirname, 'tasks'),
