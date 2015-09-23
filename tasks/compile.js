@@ -1,12 +1,11 @@
 'use strict';
-module.exports = function(gulp, src) {
+module.exports = (gulp, src) => {
 
     function runTSC(directory, done) {
-        var cp = require('child_process');
-        var path = require('path');
-
-        var tscJs = path.join(process.cwd(), 'node_modules/typescript/bin/tsc');
-        var childProcess = cp.spawn('node', [tscJs, '-p', directory], {cwd: process.cwd()});
+        const cp = require('child_process');
+        const path = require('path');
+        const tscJs = path.join(process.cwd(), 'node_modules/typescript/bin/tsc');
+        const childProcess = cp.spawn('node', [tscJs, '-p', directory], {cwd: process.cwd()});
 
         childProcess.stdout.on('data', function(data) {
             console.log(data.toString());
@@ -19,7 +18,7 @@ module.exports = function(gulp, src) {
         });
     }
 
-    return function(done) {
+    return (done) => {
         return runTSC(src, done);
-    };
+    }
 };

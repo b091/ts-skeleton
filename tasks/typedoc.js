@@ -1,12 +1,12 @@
 'use strict';
-module.exports = function(gulp, config) {
-    return function() {
-        var path = require('path');
-        var typeDoc = require('gulp-typedoc');
-        var appName = require(path.join(config.projectDir, 'package.json')).name;
-        var tsConfig = require(path.join(config.srcDir, 'tsconfig.json'));
+module.exports = (gulp, config) => {
+    return () => {
+        const path = require('path');
+        const typeDoc = require('gulp-typedoc');
+        const appName = require(path.join(config.projectDir, 'package.json')).name;
+        const tsConfig = require(path.join(config.srcDir, 'tsconfig.json'));
+        const compilerOptions = tsConfig.compilerOptions;
 
-        var compilerOptions = tsConfig.compilerOptions;
         delete(compilerOptions.sourceMap);
         compilerOptions.out = config.docsDir;
         compilerOptions.name = appName;

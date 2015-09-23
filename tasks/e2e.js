@@ -1,8 +1,8 @@
 'use strict';
-module.exports = function(gulp, config) {
-    return function() {
-        var protractor = require('gulp-protractor').protractor;
-        var path = require('path');
+module.exports = (gulp, config) => {
+    return () => {
+        const protractor = require('gulp-protractor').protractor;
+        const path = require('path');
 
         return gulp.src([path.join(config.testDir, 'e2e/*.js')])
             .pipe(protractor({

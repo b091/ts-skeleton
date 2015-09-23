@@ -1,11 +1,11 @@
 'use strict';
-module.exports = function(gulp, serverRootDir, watchDir, openBrowser) {
+module.exports = (gulp, serverRootDir, watchDir, openBrowser) => {
     var fs = require('fs');
 
-    return function() {
-        var path = require('path');
-        var portFinder = require('portfinder');
-        var webServer = require('gulp-webserver');
+    return () => {
+        const path = require('path');
+        const portFinder = require('portfinder');
+        const webServer = require('gulp-webserver');
         openBrowser = typeof openBrowser !== 'undefined' ? openBrowser : true;
 
         if (shouldWatchTypeScript() && liveReload()) {
@@ -17,7 +17,7 @@ module.exports = function(gulp, serverRootDir, watchDir, openBrowser) {
 
         return portFinder.getPort({
             host: 'localhost'
-        }, function runServer(err, port) {
+        }, (err, port) => {
             gulp.src([serverRootDir])
                 .pipe(webServer({
                     livereload: {

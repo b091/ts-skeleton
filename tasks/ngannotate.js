@@ -1,8 +1,8 @@
 'use strict';
-module.exports = function(gulp, config) {
-    return function() {
-        var ngAnnotate = require('gulp-ng-annotate');
-        var path = require('path');
+module.exports = (gulp, config) => {
+    return () => {
+        const ngAnnotate = require('gulp-ng-annotate');
+        const path = require('path');
 
         return gulp.src(path.join(config.srcDir, '**', '*.js'))
             .pipe(ngAnnotate())
