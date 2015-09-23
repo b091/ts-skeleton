@@ -64,7 +64,7 @@
       "angular-translate": "github:angular-translate/bower-angular-translate@^2.7.2",
       "angular-translate-loader-static-files": "github:angular-translate/bower-angular-translate-loader-static-files@^2.7.2",
       "angular-translate-loader-url": "github:angular-translate/bower-angular-translate-loader-url@^2.7.2",
-      "angular-ui-bootstrtoastrap": "github:angular-ui/bootstrap@^0.13.2",
+      "angular-ui-bootstrap": "github:angular-ui/bootstrap@^0.13.2",
       "angular-ui-router": "github:angular-ui/ui-router@^0.2.15",
       "bootstrap": "github:twbs/bootstrap@^3.3.5",
       "clean-css": "npm:clean-css@^3.3.8",
