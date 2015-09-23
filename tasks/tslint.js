@@ -6,6 +6,7 @@ module.exports = function(gulp, directory, configuration) {
 
         return gulp.src([
             path.join(directory, '**', '*.ts'),
+            path.join('!', directory, 'imports', 'typings', '**', '*.ts'),
             path.join('!', directory, 'references.ts')
         ]).pipe(tslint({
             configuration: require(configuration)

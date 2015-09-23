@@ -7,11 +7,7 @@ export function directive(...values:string[]):any {
         ctor.prototype = classConstructor.prototype;
         const child:Object = new ctor;
         const result:Object = classConstructor.apply(child, args);
-        const res:any = typeof result === "object" ? result : child;
-        console.log("22", Reflect.getMetadata("design:paramtypes", classConstructor));
-        console.log("22", Reflect.getMetadata("design:properties", classConstructor));
-        console.log("22", Reflect.getMetadata("design:paramtypes", classConstructor).map((a:any) => { Object.getOwnPropertyNames(a); return a.name; }).join(" "));
-        return res;
+        return typeof result === "object" ? result : child;
       })(target, args, () => {
         return null;
       });
@@ -21,8 +17,8 @@ export function directive(...values:string[]):any {
   };
 }
 
-function argumentNames(fun:Function):Array {
-  var names:Array = fun.toString().match(/^[\s\(]*function[^(]*\(([^)]*)\)/)[1]
+function argumentNames(fun:Function):Array<string> {
+  var names:Array<string> = fun.toString().match(/^[\s\(]*function[^(]*\(([^)]*)\)/)[1]
     .replace(/\/\/.*?[\r\n]|\/\*(?:.|[\r\n])*?\*\//g, "")
     .replace(/\s+/g, "").split(",");
   return names.length === 1 && !names[0] ? [] : names;
