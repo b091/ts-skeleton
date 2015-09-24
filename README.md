@@ -6,9 +6,6 @@ Future proof application skeleton
 This is an example of application skeleton written full in TypeScript 1.6 including: 
 unit and e2e test samples, bundling (minification, ng-annotate) and most needed automation tasks with gulp.
 
-
-### Example
--------
 Example contains simple implementation of Angular: 
 * controller 
 * service
