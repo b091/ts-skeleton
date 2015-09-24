@@ -21,7 +21,7 @@
     "gulp-typedoc": "^1.2.1",
     "gulp-webserver": "^0.9.1",
     "jshint-stylish": "^2.0.1",
-    "jspm": "^0.16.8",
+    "jspm": "^0.16.10",
     "karma": "^0.13.10",
     "karma-chai-sinon": "^0.1.5",
     "karma-coverage": "^0.5.2",

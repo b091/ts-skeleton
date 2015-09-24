@@ -25,7 +25,7 @@ System.config({
     "angular-ui-bootstrap": "github:angular-ui/bootstrap@0.13.4",
     "angular-ui-router": "github:angular-ui/ui-router@0.2.15",
     "babel": "npm:babel-core@5.8.25",
-    "babel-runtime": "npm:babel-runtime@5.8.24",
+    "babel-runtime": "npm:babel-runtime@5.8.25",
     "bootstrap": "github:twbs/bootstrap@3.3.5",
     "clean-css": "npm:clean-css@3.4.4",
     "core-js": "npm:core-js@0.9.18",
@@ -103,7 +103,7 @@ System.config({
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
     },
-    "npm:babel-runtime@5.8.24": {
+    "npm:babel-runtime@5.8.25": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:buffer@3.5.0": {
