@@ -4,15 +4,7 @@ Future proof application skeleton
 
 
 This is an example of application skeleton written full in TypeScript 1.6 including: 
-unit and e2e test samples, bundling (minification, ng-annotate) and most needed automation tasks with gulp.
-
-Example contains simple implementation of Angular: 
-* controller 
-* service
-* directive
-* ui router
-* toastr
-* ngannotate
+unit and e2e test samples, bundling and most needed automation tasks with gulp.
 
 ### Technology Stack
 -------
@@ -24,8 +16,6 @@ Example contains simple implementation of Angular:
 * Sinonjs
 * Protractor
 * Gulp 
-* Angular 1.x
-* Bootstrap from Twitter
 
 ### Requirements
 -------
@@ -70,13 +60,6 @@ gulp check:tslint:src   # checks TypeScript files from src/ directory
 gulp check:tslint:test  # checks TypeScript files from src/ directory
 ```
 
-Angular Bundling 
-
-```
-gulp ng:directives      # bundles directives from templateUrl to template
-gulp ng:annotate        # adds ng annotate to typescript output
-```
-
 Remove compiled files
 
 ```
@@ -114,7 +97,7 @@ gulp test:e2e   # run e2e tests from test/e2e directory
 MIT
 
 [travis-url]: https://travis-ci.org/b091/ts-skeleton
-[travis-image]: https://travis-ci.org/b091/ts-skeleton.svg?branch=master
+[travis-image]: https://travis-ci.org/b091/ts-skeleton.svg?branch=core
 
 [depstat-url]: https://david-dm.org/b091/ts-skeleton#info=devDependencies
 [depstat-image]: https://david-dm.org/b091/ts-skeleton/dev-status.svg

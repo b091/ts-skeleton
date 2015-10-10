@@ -37,10 +37,7 @@ gulp.task('test:unit', require('./tasks/test')(config.testDir));
 gulp.task('test:e2e', ['serve:e2e'], require('./tasks/e2e')(gulp, config));
 gulp.task('test', ['compile', 'test:unit', 'test:e2e']);
 
-gulp.task('ng:directives', ['compile:src'], require('./tasks/ngdirectives')(gulp, config));
-gulp.task('ng:annotate', ['ng:directives'], require('./tasks/ngannotate')(gulp, config));
-
-gulp.task('build:dist', ['ng:annotate'], require('./tasks/build')(gulp, config));
+gulp.task('build:dist', require('./tasks/build')(gulp, config));
 gulp.task('build:docs', require('./tasks/typedoc')(gulp, config));
 gulp.task('build', ['build:dist', 'build:docs']);
 
