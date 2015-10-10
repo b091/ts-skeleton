@@ -27,11 +27,11 @@ gulp.task('serve:e2e', require('./tasks/server')(gulp, __dirname, false, false))
 gulp.task('serve:dist', require('./tasks/server')(gulp, config.distDir, false));
 gulp.task('serve', ['compile:src'], require('./tasks/server')(gulp, __dirname, config.watchDir));
 
-gulp.task('check:jshint', require('./tasks/jshint')(gulp, config));
+gulp.task('check:eslint', require('./tasks/eslint')(gulp, config));
 gulp.task('check:tslint', ['check:tslint:src', 'check:tslint:test']);
 gulp.task('check:tslint:src', require('./tasks/tslint')(gulp, config.srcDir, config.tsLintSrcConf));
 gulp.task('check:tslint:test', require('./tasks/tslint')(gulp, config.testDir, config.tsLintTestConf));
-gulp.task('check', ['check:jshint', 'check:tslint']);
+gulp.task('check', ['check:eslint', 'check:tslint']);
 
 gulp.task('test:unit', require('./tasks/test')(config.testDir));
 gulp.task('test:e2e', ['serve:e2e'], require('./tasks/e2e')(gulp, config));
