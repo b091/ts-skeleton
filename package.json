@@ -13,9 +13,7 @@
     "del": "~2.0.2",
     "eslint": "~1.6.0",
     "gulp": "~3.9.0",
-    "gulp-directive-replace": "git+https://github.com/b091/gulp-directive-replace.git",
     "gulp-eslint": "~1.0.0",
-    "gulp-ng-annotate": "~1.1.0",
     "gulp-protractor": "~1.0.0",
     "gulp-replace": "~0.5.4",
     "gulp-tslint": "~3.3.0",
@@ -54,9 +52,6 @@
     },
     "configFile": "jspm.conf.js",
     "dependencies": {
-      "angular": "github:angular/bower-angular@^1.4.3",
-      "angular-ui-router": "github:angular-ui/ui-router@^0.2.15",
-      "bootstrap": "github:twbs/bootstrap@^3.3.5",
       "clean-css": "npm:clean-css@^3.3.8",
       "css": "github:systemjs/plugin-css@^0.1.13",
       "ts": "github:frankwallis/plugin-typescript@^2.0.17"
