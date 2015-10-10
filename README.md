@@ -59,12 +59,12 @@ gulp serve:docs       # Generates and serves documentation
 
 Validate sources with specified rules defined in : 
 * `tslint.json` for TypeScript
-* `.jshintrc` for JavaScript
+* `.eslintrc` for JavaScript
 
 
 ```
 gulp check              # check all
-gulp check:jshint       # checks gulp tasks and gulpfile (only not generated js files in this repo)
+gulp check:eslint       # checks gulp tasks and gulpfile (only not generated js files in this repo)
 gulp check:tslint       # checks TypeScript files from src/ and test/ directory
 gulp check:tslint:src   # checks TypeScript files from src/ directory
 gulp check:tslint:test  # checks TypeScript files from src/ directory
