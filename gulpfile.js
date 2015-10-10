@@ -2,16 +2,16 @@ const gulp = require('gulp');
 const path = require('path');
 
 const config = {
-    projectDir: __dirname,
-    configDir: path.join(__dirname, 'config'),
-    taskDir: path.join(__dirname, 'tasks'),
-    testDir: path.join(__dirname, 'test'),
-    srcDir: path.join(__dirname, 'src'),
-    docsDir: path.join(__dirname, 'docs'),
-    distDir: path.join(__dirname, 'dist'),
-    tsLintSrcConf: path.join(__dirname, 'tslint.json'),
-    tsLintTestConf: path.join(__dirname, 'tslint.json'),
-    watchDir: path.join(__dirname, 'src')
+  projectDir: __dirname,
+  configDir: path.join(__dirname, 'config'),
+  taskDir: path.join(__dirname, 'tasks'),
+  testDir: path.join(__dirname, 'test'),
+  srcDir: path.join(__dirname, 'src'),
+  docsDir: path.join(__dirname, 'docs'),
+  distDir: path.join(__dirname, 'dist'),
+  tsLintSrcConf: path.join(__dirname, 'tslint.json'),
+  tsLintTestConf: path.join(__dirname, 'tslint.json'),
+  watchDir: path.join(__dirname, 'src')
 };
 
 gulp.task('clean:src', require('./tasks/clean')(gulp, config.srcDir));

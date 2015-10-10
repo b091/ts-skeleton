@@ -1,6 +1,6 @@
 // An example configuration file.
 exports.config = {
-  frameworks: ['mocha','chai'],
+  frameworks: ['mocha', 'chai'],
   directConnect: true,
   capabilities: {
     'browserName': 'chrome'
