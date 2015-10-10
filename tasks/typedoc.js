@@ -6,7 +6,7 @@ module.exports = (gulp, config) => {
         const tsConfig = require(path.join(config.srcDir, 'tsconfig.json'));
         const compilerOptions = tsConfig.compilerOptions;
 
-        delete(compilerOptions.sourceMap);
+        delete compilerOptions.sourceMap;
         compilerOptions.out = config.docsDir;
         compilerOptions.name = appName;
         compilerOptions.mode = 'file';

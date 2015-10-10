@@ -51,6 +51,6 @@ module.exports = (gulp, serverRootDir, watchDir, openBrowser) => {
     }
 
     function liveReload() {
-        return typeof(watchDir) === 'string';
+        return typeof watchDir === 'string';
     }
 };
