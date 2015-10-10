@@ -13,16 +13,6 @@ System.config({
 
   map: {
     "angular": "github:angular/bower-angular@1.4.7",
-    "angular-animate": "github:angular/bower-angular-animate@1.4.7",
-    "angular-cookies": "github:angular/bower-angular-cookies@1.4.7",
-    "angular-messages": "github:angular/bower-angular-messages@1.4.7",
-    "angular-resource": "github:angular/bower-angular-resource@1.4.7",
-    "angular-sanitize": "github:angular/bower-angular-sanitize@1.4.7",
-    "angular-toastr": "github:Foxandxss/angular-toastr@1.5.0",
-    "angular-translate": "github:angular-translate/bower-angular-translate@2.8.1",
-    "angular-translate-loader-static-files": "github:angular-translate/bower-angular-translate-loader-static-files@2.8.1",
-    "angular-translate-loader-url": "github:angular-translate/bower-angular-translate-loader-url@2.8.1",
-    "angular-ui-bootstrap": "github:angular-ui/bootstrap@0.13.4",
     "angular-ui-router": "github:angular-ui/ui-router@0.2.15",
     "babel": "npm:babel-core@5.8.25",
     "babel-runtime": "npm:babel-runtime@5.8.25",
@@ -32,22 +22,7 @@ System.config({
     "css": "github:systemjs/plugin-css@0.1.18",
     "ts": "github:frankwallis/plugin-typescript@2.0.17",
     "typescript": "npm:typescript@1.6.2",
-    "github:angular-translate/bower-angular-translate-loader-static-files@2.8.1": {
-      "angular-translate": "github:angular-translate/bower-angular-translate@2.8.1"
-    },
-    "github:angular-translate/bower-angular-translate@2.8.1": {
-      "angular": "github:angular/bower-angular@1.4.7"
-    },
     "github:angular-ui/ui-router@0.2.15": {
-      "angular": "github:angular/bower-angular@1.4.7"
-    },
-    "github:angular/bower-angular-animate@1.4.7": {
-      "angular": "github:angular/bower-angular@1.4.7"
-    },
-    "github:angular/bower-angular-cookies@1.4.7": {
-      "angular": "github:angular/bower-angular@1.4.7"
-    },
-    "github:angular/bower-angular-sanitize@1.4.7": {
       "angular": "github:angular/bower-angular@1.4.7"
     },
     "github:frankwallis/plugin-typescript@2.0.17": {

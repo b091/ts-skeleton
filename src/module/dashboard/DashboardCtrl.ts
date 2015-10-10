@@ -6,8 +6,7 @@ export class DashboardCtrl {
   public stories:Story[];
 
   // @ngInject
-  constructor(private toastr:Toastr, private storyService:StoryService) {
-    toastr.success("Salute!", "Toastr fun!");
+  constructor(private storyService:StoryService) {
     this.stories = storyService.model;
     storyService.getAll();
   }

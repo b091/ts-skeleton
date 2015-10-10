@@ -1,6 +1,5 @@
 import {App} from "./App";
 
-import "./module/toast/Toast";
 import "./module/dashboard/Dashboard";
 import "./module/menu/Menu";
 import "./module/auth/Auth";
@@ -13,7 +12,6 @@ App.element(document).ready(() => {
     "app",
     "app.dashboard",
     "app.auth",
-    "app.toast",
     "app.services",
     "app.menu"
   ]);

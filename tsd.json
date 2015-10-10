@@ -26,24 +26,6 @@
     "angular-ui-router/angular-ui-router.d.ts": {
       "commit": "3d2916191781fe400176a030c03722ac4b87f1c1"
     },
-    "toastr/toastr.d.ts": {
-      "commit": "b45569f35d5f27716d21cc2a639c7d8ccb9a0164"
-    },
-    "angularjs/angular-animate.d.ts": {
-      "commit": "284c2b8828f06bdde1f949a22ad174f5221d57f9"
-    },
-    "angularjs/angular-cookies.d.ts": {
-      "commit": "284c2b8828f06bdde1f949a22ad174f5221d57f9"
-    },
-    "angularjs/angular-resource.d.ts": {
-      "commit": "284c2b8828f06bdde1f949a22ad174f5221d57f9"
-    },
-    "angularjs/angular-sanitize.d.ts": {
-      "commit": "284c2b8828f06bdde1f949a22ad174f5221d57f9"
-    },
-    "angular-translate/angular-translate.d.ts": {
-      "commit": "284c2b8828f06bdde1f949a22ad174f5221d57f9"
-    },
     "angular-protractor/angular-protractor.d.ts": {
       "commit": "8de599097a8acb3c246f9cc152f07b323c5a8b49"
     },
