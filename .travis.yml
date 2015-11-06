@@ -1,12 +1,13 @@
 language: node_js
 
-sudo: required
-dist: trusty
-
 node_js:
 - '4.1.1'
 
 before_install:
+- wget https://s3.amazonaws.com/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2
+- tar -xjf phantomjs-2.0.0-ubuntu-12.04.tar.bz2
+- sudo rm -rf /usr/local/phantomjs/bin/phantomjs
+- sudo mv phantomjs /usr/local/phantomjs/bin/phantomjs
 - npm install --quiet -g gulp jspm typescript tsd
 - jspm config registries.github.remote https://github.jspm.io
 - jspm config registries.github.auth YjA5MTprcnRnbWszYQ==
