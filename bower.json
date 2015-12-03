@@ -1,6 +1,6 @@
 {
   "name": "ts-skeleton",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "dist/ts-skeleton.min.js",
   "ignore": [
     "tasks",
