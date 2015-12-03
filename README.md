@@ -3,7 +3,7 @@ Future proof application skeleton
  [![Build Status][travis-image]][travis-url]  [![Dependency Status][depstat-image]][depstat-url]
 
 
-This is an example of application skeleton written full in TypeScript 1.6 including: 
+This is an example of application skeleton written full in TypeScript 1.7 including: 
 unit and e2e test samples, bundling (minification, ng-annotate) and most needed automation tasks with gulp.
 
 Example contains simple implementation of Angular: 
