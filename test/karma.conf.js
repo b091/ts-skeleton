@@ -1,16 +1,31 @@
-'use strict';
-
-module.exports = function (config) {
+module.exports = (config) => {
   config.set({
-    // enable / disable watching file and executing tests whenever any file changes
+    exclude: [],
+    port: 9999,
     autoWatch: false,
-
-    // base path, that will be used to resolve files and exclude
     basePath: '../',
-
-    frameworks: ['jspm', 'mocha', 'chai-sinon'],
-
-    // list of files / patterns to load in the browser
+    singleRun: true,
+    colors: true,
+    logLevel: config.LOG_INFO, // possible values: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
+    browsers: ['PhantomJS2'],
+    reporters: [
+      'junit',
+      'progress',
+      'coverage'
+    ],
+    frameworks: [
+      'jspm',
+      'mocha',
+      'chai-sinon'
+    ],
+    plugins: [
+      'karma-phantomjs2-launcher',
+      'karma-jspm',
+      'karma-mocha',
+      'karma-chai-sinon',
+      'karma-coverage',
+      'karma-junit-reporter'
+    ],
     jspm: {
       config: 'jspm.conf.js',
       serveFiles: [
@@ -22,39 +37,9 @@ module.exports = function (config) {
         'test/unit/**/*.js'
       ]
     },
-
-    // list of files / patterns to exclude
-    exclude: [],
-
-    port: 9999,
-
-    browsers: [
-      'PhantomJS2'
-    ],
-
-    plugins: [
-      'karma-phantomjs2-launcher',
-      'karma-jspm',
-      'karma-mocha',
-      'karma-chai-sinon',
-      'karma-coverage',
-      'karma-junit-reporter'
-    ],
-
-    // Continuous Integration mode if true, it capture browsers, run tests and exit
-    singleRun: true,
-
-    colors: true,
-
-    // possible values: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
-    logLevel: config.LOG_INFO,
-
-    reporters: ['junit', 'progress', 'coverage'],
-
     preprocessors: {
       'src/**/*.js': ['coverage']
     },
-
     coverageReporter: {
       dir: 'report/coverage/',
       reporters: [
@@ -62,16 +47,13 @@ module.exports = function (config) {
         {type: 'cobertura', subdir: 'cobertura'}
       ]
     },
-
     junitReporter: {
       outputDir: 'report/',
       outputFile: '../test-results.xml',
       suite: ''
     },
-
     proxies: {
       '/resources/': '/base/test/resources/'
     }
-
   });
 };
