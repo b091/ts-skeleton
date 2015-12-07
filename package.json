@@ -10,7 +10,7 @@
   "dependencies": {},
   "devDependencies": {
     "chai": "~3.4.1",
-    "del": "~2.1.0",
+    "del": "~2.2.0",
     "eslint": "~1.10.3",
     "gulp": "~3.9.0",
     "gulp-eslint": "~1.1.1",
@@ -19,8 +19,8 @@
     "gulp-tslint": "~4.1.1",
     "gulp-typedoc": "~1.2.1",
     "gulp-webserver": "~0.9.1",
-    "jspm": "~0.16.14",
-    "karma": "~0.13.14",
+    "jspm": "~0.16.15",
+    "karma": "~0.13.15",
     "karma-chai-sinon": "~0.1.5",
     "karma-coverage": "~0.5.3",
     "karma-jspm": "~2.0.2",
@@ -50,7 +50,7 @@
     },
     "configFile": "jspm.conf.js",
     "dependencies": {
-      "aurelia-dependency-injection": "github:aurelia/dependency-injection@^0.12.1",
+      "aurelia/dependency-injection": "github:aurelia/dependency-injection@^0.12.1",
       "clean-css": "npm:clean-css@^3.3.8",
       "css": "github:systemjs/plugin-css@^0.1.13",
       "ts": "github:frankwallis/plugin-typescript@^2.0.17"

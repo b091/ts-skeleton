@@ -17,9 +17,6 @@
     "mocha/mocha.d.ts": {
       "commit": "983126e131a2b81739053d60e4bbdbb46d6577b7"
     },
-    "angular-protractor/angular-protractor.d.ts": {
-      "commit": "8de599097a8acb3c246f9cc152f07b323c5a8b49"
-    },
     "selenium-webdriver/selenium-webdriver.d.ts": {
       "commit": "8de599097a8acb3c246f9cc152f07b323c5a8b49"
     }
