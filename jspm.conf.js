@@ -12,10 +12,21 @@ System.config({
   },
 
   map: {
+    "aurelia/dependency-injection": "github:aurelia/dependency-injection@0.12.1",
     "clean-css": "npm:clean-css@3.4.8",
     "css": "github:systemjs/plugin-css@0.1.20",
     "ts": "github:frankwallis/plugin-typescript@2.4.0",
     "typescript": "npm:typescript@1.7.3",
+    "github:aurelia/dependency-injection@0.12.1": {
+      "aurelia-logging": "github:aurelia/logging@0.9.0",
+      "aurelia-metadata": "github:aurelia/metadata@0.10.1",
+      "aurelia-pal": "github:aurelia/pal@0.3.0",
+      "core-js": "npm:core-js@1.2.6"
+    },
+    "github:aurelia/metadata@0.10.1": {
+      "aurelia-pal": "github:aurelia/pal@0.3.0",
+      "core-js": "npm:core-js@1.2.6"
+    },
     "github:frankwallis/plugin-typescript@2.4.0": {
       "typescript": "npm:typescript@1.7.3"
     },
@@ -94,6 +105,12 @@ System.config({
       "graceful-readlink": "npm:graceful-readlink@1.0.1",
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:core-js@1.2.6": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
     "npm:core-util-is@1.0.2": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
