@@ -18,7 +18,7 @@
     "gulp-ng-annotate": "~1.1.0",
     "gulp-protractor": "~2.1.0",
     "gulp-replace": "~0.5.4",
-    "gulp-tslint": "~4.1.1",
+    "gulp-tslint": "~4.2.1",
     "gulp-typedoc": "~1.2.1",
     "gulp-webserver": "~0.9.1",
     "jspm": "~0.16.15",
@@ -38,7 +38,7 @@
     "sinon": "~1.17.2",
     "sinon-chai": "~2.8.0",
     "tsd": "~0.6.5",
-    "tslint": "~3.1.1",
+    "tslint": "~3.2.0",
     "typescript": "~1.7.3"
   },
   "engines": {
