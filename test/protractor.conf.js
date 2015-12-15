@@ -9,13 +9,13 @@ exports.config = {
   onPrepare: function () {
     global.browser = browser.driver;
 
-    //For non-angular apps
-    global.ignoreSynchronization = function () {
-      return browser.ignoreSynchronization = true;
+    // For non-angular apps
+    global.ignoreSynchronization = function (flag) {
+      browser.ignoreSynchronization = flag;
     };
 
     global.startLocalhost = function () {
-      ignoreSynchronization();
+      ignoreSynchronization(false);
       browser.get('http://localhost:8000');
       browser.manage().timeouts().implicitlyWait(3000);
     };
