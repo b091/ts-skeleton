@@ -24,14 +24,11 @@ System.config({
     "angular-translate-loader-url": "github:angular-translate/bower-angular-translate-loader-url@2.8.1",
     "angular-ui-bootstrap": "github:angular-ui/bootstrap@0.13.4",
     "angular-ui-router": "github:angular-ui/ui-router@0.2.15",
-    "babel": "npm:babel-core@5.8.34",
-    "babel-runtime": "npm:babel-runtime@5.8.34",
     "bootstrap": "github:twbs/bootstrap@3.3.6",
-    "clean-css": "npm:clean-css@3.4.8",
-    "core-js": "npm:core-js@0.9.18",
+    "clean-css": "npm:clean-css@3.4.9",
     "css": "github:systemjs/plugin-css@0.1.20",
-    "ts": "github:frankwallis/plugin-typescript@2.3.2",
-    "typescript": "npm:typescript@1.7.3",
+    "ts": "github:frankwallis/plugin-typescript@2.4.5",
+    "typescript": "npm:typescript@1.7.5",
     "github:Foxandxss/angular-toastr@1.6.0": {
       "angular": "github:angular/bower-angular@1.4.8",
       "css": "github:systemjs/plugin-css@0.1.20"
@@ -57,14 +54,14 @@ System.config({
     "github:angular/bower-angular-sanitize@1.4.8": {
       "angular": "github:angular/bower-angular@1.4.8"
     },
-    "github:frankwallis/plugin-typescript@2.3.2": {
-      "typescript": "npm:typescript@1.7.3"
+    "github:frankwallis/plugin-typescript@2.4.5": {
+      "typescript": "npm:typescript@1.7.5"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
     "github:jspm/nodelibs-buffer@0.1.0": {
-      "buffer": "npm:buffer@3.5.3"
+      "buffer": "npm:buffer@3.6.0"
     },
     "github:jspm/nodelibs-events@0.1.1": {
       "events": "npm:events@1.0.2"
@@ -110,18 +107,15 @@ System.config({
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
     },
-    "npm:babel-runtime@5.8.34": {
-      "process": "github:jspm/nodelibs-process@0.1.2"
-    },
-    "npm:buffer@3.5.3": {
+    "npm:buffer@3.6.0": {
       "base64-js": "npm:base64-js@0.0.8",
       "child_process": "github:jspm/nodelibs-child_process@0.1.0",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "ieee754": "npm:ieee754@1.1.6",
-      "is-array": "npm:is-array@1.0.1",
+      "isarray": "npm:isarray@1.0.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:clean-css@3.4.8": {
+    "npm:clean-css@3.4.9": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "commander": "npm:commander@2.8.1",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
@@ -141,11 +135,6 @@ System.config({
       "graceful-readlink": "npm:graceful-readlink@1.0.1",
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
-    },
-    "npm:core-js@0.9.18": {
-      "fs": "github:jspm/nodelibs-fs@0.1.2",
-      "process": "github:jspm/nodelibs-process@0.1.2",
-      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
     "npm:core-util-is@1.0.2": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
