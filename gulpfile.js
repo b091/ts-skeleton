@@ -18,9 +18,7 @@ gulp.task('clean:src', require('./tasks/clean')(gulp, config.srcDir));
 gulp.task('clean:test', require('./tasks/clean')(gulp, config.testDir));
 gulp.task('clean', ['clean:src', 'clean:test']);
 
-gulp.task('compile:src', ['clean:src'], require('./tasks/compile')(gulp, config.srcDir));
-gulp.task('compile:test', ['clean:test'], require('./tasks/compile')(gulp, config.testDir));
-gulp.task('compile', ['compile:src', 'compile:test']);
+gulp.task('compile', require('./tasks/compile')(gulp, config.projectDir));
 
 gulp.task('serve:docs', ['build:docs'], require('./tasks/server')(gulp, config.docsDir));
 gulp.task('serve:e2e', require('./tasks/server')(gulp, __dirname, false, false));
