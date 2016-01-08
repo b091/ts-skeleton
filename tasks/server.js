@@ -1,56 +1,56 @@
 module.exports = (gulp, serverRootDir, watchDir, openBrowser) => {
-    var fs = require('fs');
+  var fs = require('fs');
 
-    return () => {
-        const path = require('path');
-        const portFinder = require('portfinder');
-        const webServer = require('gulp-webserver');
-        openBrowser = typeof openBrowser !== 'undefined' ? openBrowser : true;
+  return () => {
+    const path = require('path');
+    const portFinder = require('portfinder');
+    const webServer = require('gulp-webserver');
+    openBrowser = typeof openBrowser !== 'undefined' ? openBrowser : true;
 
-        if (shouldWatchTypeScript() && liveReload()) {
-            console.log('TS ON => Watching TypeScript enabled');
-            gulp.watch(path.join(watchDir, '**', '*.ts'), ['compile:src']);
-        } else {
-            console.log('TS OFF => Watching TypeScript disabled');
-        }
-
-        return portFinder.getPort({
-            host: 'localhost'
-        }, (err, port) => {
-            gulp.src([serverRootDir])
-                .pipe(webServer({
-                    livereload: {
-                        enable: liveReload(),
-                        filter: filterWatchFilesForLivereload
-                    },
-                    open: openBrowser,
-                    port: port
-                }));
-        });
-    };
-
-    function isInWatchDir(fileName) {
-        return fileName.indexOf(watchDir) >= 0;
+    if (shouldWatchTypeScript() && liveReload()) {
+      console.log('TS ON => Watching TypeScript enabled');
+      gulp.watch(path.join(watchDir, '**', '*.ts'), ['compile:src']);
+    } else {
+      console.log('TS OFF => Watching TypeScript disabled');
     }
 
-    function isDirectory(path) {
-        return fs.lstatSync(path).isDirectory();
-    }
+    return portFinder.getPort({
+      host: 'localhost'
+    }, (err, port) => {
+      gulp.src([serverRootDir])
+        .pipe(webServer({
+          livereload: {
+            enable: liveReload(),
+            filter: filterWatchFilesForLivereload
+          },
+          open: openBrowser,
+          port: port
+        }));
+    });
+  };
 
-    function isJsFile(fileName) {
-        return fileName.match(/.js$/);
-    }
+  function isInWatchDir(fileName) {
+    return fileName.indexOf(watchDir) >= 0;
+  }
 
-    function filterWatchFilesForLivereload(fileName) {
-        return isInWatchDir(fileName) && (isDirectory(fileName) || isJsFile(fileName));
-    }
+  function isDirectory(path) {
+    return fs.lstatSync(path).isDirectory();
+  }
 
-    function shouldWatchTypeScript() {
-        var argsWithoutTaskName = process.argv.slice(3);
-        return !(argsWithoutTaskName.length > 0 && argsWithoutTaskName[0] === '--watch-js');
-    }
+  function isJsFile(fileName) {
+    return fileName.match(/.js$/);
+  }
 
-    function liveReload() {
-        return typeof watchDir === 'string';
-    }
+  function filterWatchFilesForLivereload(fileName) {
+    return isInWatchDir(fileName) && (isDirectory(fileName) || isJsFile(fileName));
+  }
+
+  function shouldWatchTypeScript() {
+    var argsWithoutTaskName = process.argv.slice(3);
+    return !(argsWithoutTaskName.length > 0 && argsWithoutTaskName[0] === '--watch-js');
+  }
+
+  function liveReload() {
+    return typeof watchDir === 'string';
+  }
 };
