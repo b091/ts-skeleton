@@ -3,15 +3,15 @@ module.exports = (gulp, config) => {
     const protractor = require('gulp-protractor').protractor;
     const path = require('path');
 
-    return gulp.src([path.join(config.testDir, 'e2e/*.js')])
+    return gulp.src([path.join(config.testDir, 'e2e', '*.js')])
       .pipe(protractor({
         configFile: path.join(config.testDir, 'protractor.conf.js')
       }))
-      .on('end', function() {
+      .on('end', () => {
         console.log('E2E Testing complete');
         process.exit();
       })
-      .on('error', function() {
+      .on('error', () => {
         console.log('E2E Tests failed');
         process.exit(1);
       });
