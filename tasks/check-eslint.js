@@ -1,10 +1,11 @@
 module.exports = (gulp, config) => () => {
   const esLint = require('gulp-eslint');
   const path = require('path');
+  const packageJson = require(path.join(config.projectDir, 'package.json'));
 
   return gulp.src([
       path.join(config.configDir, '**', '*.js'),
-      '!' + path.join(config.projectDir, 'jspm.conf.js'),
+      '!' + path.join(config.projectDir, packageJson.jspm.configFile),
       path.join(config.taskDir, '**', '*.js'),
       'gulpfile.js'
     ])
