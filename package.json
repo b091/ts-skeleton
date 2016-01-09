@@ -9,6 +9,7 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "browser-sync": "^2.11.0",
     "chai": "~3.4.1",
     "del": "~2.2.0",
     "eslint": "~1.10.3",
@@ -19,7 +20,6 @@
     "gulp-protractor": "~2.1.0",
     "gulp-tslint": "^4.2.2",
     "gulp-typedoc": "~1.2.1",
-    "gulp-webserver": "~0.9.1",
     "jspm": "^0.16.19",
     "karma": "^0.13.19",
     "karma-chai-sinon": "~0.1.5",
@@ -28,6 +28,7 @@
     "karma-junit-reporter": "~0.3.8",
     "karma-mocha": "~0.2.1",
     "karma-phantomjs-launcher": "^0.2.3",
+    "minimist": "^1.2.0",
     "mocha": "~2.3.4",
     "phantomjs": "~1.9.19",
     "phantomjs-polyfill": "~0.0.1",

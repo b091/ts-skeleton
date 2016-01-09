@@ -1,56 +1,37 @@
 module.exports = (gulp, serverRootDir, watchDir, openBrowser) => {
-  var fs = require('fs');
-
   return () => {
     const path = require('path');
-    const portFinder = require('portfinder');
-    const webServer = require('gulp-webserver');
-    openBrowser = typeof openBrowser !== 'undefined' ? openBrowser : true;
+    var onOffFlag = '✗';
+    const browserSync = require('browser-sync').init({
+      server: {
+        baseDir: [serverRootDir]
+      },
+      open: openBrowser,
+      host: 'localhost',
+      browser: 'default',
+      notify: false
+    });
 
-    if (shouldWatchTypeScript() && liveReload()) {
-      console.log('TS ON => Watching TypeScript enabled');
-      gulp.watch(path.join(watchDir, '**', '*.ts'), ['compile:src']);
-    } else {
-      console.log('TS OFF => Watching TypeScript disabled');
+    if (watchDir) {
+      if (shouldWatchTypeScript()) {
+        gulp.watch(path.join(watchDir, '**', '*.ts'), (event) => {
+          require('./compile')(gulp, watchDir, browserSync.reload)(); // todo single file recompile
+          console.info(`File ${event.path} was ${event.type}, running compilation...`);
+        });
+        onOffFlag = '✓';
+      }
+      else {
+        gulp.watch(path.join(watchDir, '**', '*.js'), browserSync.reload);
+      }
     }
 
-    return portFinder.getPort({
-      host: 'localhost'
-    }, (err, port) => {
-      gulp.src([serverRootDir])
-        .pipe(webServer({
-          livereload: {
-            enable: liveReload(),
-            filter: filterWatchFilesForLivereload
-          },
-          open: openBrowser,
-          port: port
-        }));
-    });
+    console.info(`\n\tWatching TypeScript ${onOffFlag}\n`);
+
+    return browserSync;
   };
 
-  function isInWatchDir(fileName) {
-    return fileName.indexOf(watchDir) >= 0;
-  }
-
-  function isDirectory(path) {
-    return fs.lstatSync(path).isDirectory();
-  }
-
-  function isJsFile(fileName) {
-    return fileName.match(/.js$/);
-  }
-
-  function filterWatchFilesForLivereload(fileName) {
-    return isInWatchDir(fileName) && (isDirectory(fileName) || isJsFile(fileName));
-  }
-
   function shouldWatchTypeScript() {
-    var argsWithoutTaskName = process.argv.slice(3);
-    return !(argsWithoutTaskName.length > 0 && argsWithoutTaskName[0] === '--watch-js');
-  }
-
-  function liveReload() {
-    return typeof watchDir === 'string';
+    const minimist = require('minimist');
+    return !!minimist(process.argv.slice(3))['watch-ts'];
   }
 };

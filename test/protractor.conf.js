@@ -16,7 +16,7 @@ exports.config = {
 
     global.startLocalhost = function () {
       ignoreSynchronization(false);
-      browser.get('http://localhost:8000');
+      browser.get('http://localhost:3000');
       browser.manage().timeouts().implicitlyWait(3000);
     };
   }

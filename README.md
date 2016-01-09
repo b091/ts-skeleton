@@ -51,8 +51,8 @@ npm install
 Serve application or documentation to browser
 
 ```
-gulp serve            # Serves application, watch *.ts, recompile, reload
-gulp serve --watch-js # Serves application, watch *.js, recompile, reload (useful with TypeScript IDE compilation)
+gulp serve            # Serves application, watch *.js, reload
+gulp serve --watch-ts # Serves application, watch *.ts, recompile, reload (useful without TypeScript IDE compilation)
 gulp serve:dist       # Serves application from bundled dist file
 gulp serve:docs       # Generates and serves documentation
 ```

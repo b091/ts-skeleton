@@ -22,10 +22,10 @@ gulp.task('compile:src', ['clean:src'], require('./tasks/compile')(gulp, config.
 gulp.task('compile:test', ['clean:test'], require('./tasks/compile')(gulp, config.testDir));
 gulp.task('compile', ['compile:src', 'compile:test']);
 
-gulp.task('serve:docs', ['build:docs'], require('./tasks/server')(gulp, config.docsDir));
-gulp.task('serve:e2e', require('./tasks/server')(gulp, __dirname, false, false));
-gulp.task('serve:dist', require('./tasks/server')(gulp, config.distDir, false));
-gulp.task('serve', ['compile:src'], require('./tasks/server')(gulp, __dirname, config.watchDir));
+gulp.task('serve:docs', ['build:docs'], require('./tasks/server')(gulp, config.docsDir, false, true));
+gulp.task('serve:e2e', require('./tasks/server')(gulp, __dirname, false));
+gulp.task('serve:dist', ['build:dist'], require('./tasks/server')(gulp, config.distDir, false, true));
+gulp.task('serve', ['compile:src'], require('./tasks/server')(gulp, __dirname, config.watchDir, true));
 
 gulp.task('check:eslint', require('./tasks/check-eslint')(gulp, config));
 gulp.task('check:tslint', ['check:tslint:src', 'check:tslint:test']);
