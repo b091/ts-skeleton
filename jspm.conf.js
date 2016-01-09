@@ -2,8 +2,7 @@ System.config({
   defaultJSExtensions: true,
   transpiler: "typescript",
   typescriptOptions: {
-    "module": "amd",
-    "experimentalDecorators": true
+    "tsconfig": "src/tsconfig.json"
   },
   paths: {
     "github:*": "vendor/jspm_packages/github/*",
