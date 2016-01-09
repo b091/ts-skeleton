@@ -1,1 +1,1 @@
-module.exports = () => () => require('run-sequence')('compile', 'test:unit', 'test:e2e', () => console.log('Done'));
+module.exports = () => () => require('run-sequence')('compile', 'test:unit', 'test:e2e');

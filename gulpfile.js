@@ -27,18 +27,18 @@ gulp.task('serve:e2e', require('./tasks/server')(gulp, __dirname, false, false))
 gulp.task('serve:dist', require('./tasks/server')(gulp, config.distDir, false));
 gulp.task('serve', ['compile:src'], require('./tasks/server')(gulp, __dirname, config.watchDir));
 
-gulp.task('check:eslint', require('./tasks/eslint')(gulp, config));
+gulp.task('check:eslint', require('./tasks/check-eslint')(gulp, config));
 gulp.task('check:tslint', ['check:tslint:src', 'check:tslint:test']);
-gulp.task('check:tslint:src', require('./tasks/tslint')(gulp, config.srcDir, config.tsLintSrcConf));
-gulp.task('check:tslint:test', require('./tasks/tslint')(gulp, config.testDir, config.tsLintTestConf));
-gulp.task('check', ['check:eslint', 'check:tslint']);
+gulp.task('check:tslint:src', require('./tasks/check-tslint')(gulp, config.srcDir, config.tsLintSrcConf));
+gulp.task('check:tslint:test', require('./tasks/check-tslint')(gulp, config.testDir, config.tsLintTestConf));
+gulp.task('check', require('./tasks/check')());
 
 gulp.task('test:unit', require('./tasks/test-unit')(config.testDir));
 gulp.task('test:e2e', ['serve:e2e'], require('./tasks/test-e2e')(gulp, config));
 gulp.task('test', require('./tasks/test')());
 
-gulp.task('ng:directives', ['compile:src'], require('./tasks/ngdirectives')(gulp, config));
-gulp.task('ng:annotate', ['ng:directives'], require('./tasks/ngannotate')(gulp, config));
+gulp.task('ng:directives', ['compile:src'], require('./tasks/ng-directives')(gulp, config));
+gulp.task('ng:annotate', ['ng:directives'], require('./tasks/ng-annotate')(gulp, config));
 
 gulp.task('build:dist', ['ng:annotate'], require('./tasks/build-dist')(gulp, config));
 gulp.task('build:docs', require('./tasks/build-typedoc')(gulp, config));
