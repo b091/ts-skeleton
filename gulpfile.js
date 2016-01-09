@@ -18,7 +18,9 @@ gulp.task('clean:src', require('./tasks/clean')(gulp, config.srcDir));
 gulp.task('clean:test', require('./tasks/clean')(gulp, config.testDir));
 gulp.task('clean', ['clean:src', 'clean:test']);
 
-gulp.task('compile', require('./tasks/compile')(gulp, config.projectDir));
+gulp.task('compile:src', ['clean:src'], require('./tasks/compile')(gulp, config.srcDir));
+gulp.task('compile:test', ['clean:test'], require('./tasks/compile')(gulp, config.testDir));
+gulp.task('compile', ['compile:src', 'compile:test']);
 
 gulp.task('serve:docs', ['build:docs'], require('./tasks/server')(gulp, config.docsDir));
 gulp.task('serve:e2e', require('./tasks/server')(gulp, __dirname, false, false));
@@ -31,15 +33,15 @@ gulp.task('check:tslint:src', require('./tasks/tslint')(gulp, config.srcDir, con
 gulp.task('check:tslint:test', require('./tasks/tslint')(gulp, config.testDir, config.tsLintTestConf));
 gulp.task('check', ['check:eslint', 'check:tslint']);
 
-gulp.task('test:unit', require('./tasks/test')(config.testDir));
-gulp.task('test:e2e', ['serve:e2e'], require('./tasks/e2e')(gulp, config));
-gulp.task('test', ['compile', 'test:unit', 'test:e2e']);
+gulp.task('test:unit', require('./tasks/test-unit')(config.testDir));
+gulp.task('test:e2e', ['serve:e2e'], require('./tasks/test-e2e')(gulp, config));
+gulp.task('test', require('./tasks/test')());
 
 gulp.task('ng:directives', ['compile:src'], require('./tasks/ngdirectives')(gulp, config));
 gulp.task('ng:annotate', ['ng:directives'], require('./tasks/ngannotate')(gulp, config));
 
-gulp.task('build:dist', ['ng:annotate'], require('./tasks/build')(gulp, config));
-gulp.task('build:docs', require('./tasks/typedoc')(gulp, config));
-gulp.task('build', ['build:dist', 'build:docs']);
+gulp.task('build:dist', ['ng:annotate'], require('./tasks/build-dist')(gulp, config));
+gulp.task('build:docs', require('./tasks/build-typedoc')(gulp, config));
+gulp.task('build', require('./tasks/build')());
 
 gulp.task('default', require('./tasks/default')());
