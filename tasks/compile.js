@@ -11,7 +11,5 @@ module.exports = (gulp, src) => {
     childProcess.on('close', () => done());
   }
 
-  return (done) => {
-    return runTSC(src, done);
-  };
+  return (done) => runTSC(src, done);
 };
