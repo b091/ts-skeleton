@@ -19,7 +19,7 @@ module.exports = (gulp, config) => () => {
     const outFile = path.join(config.distDir, distFileName);
     const moduleName = 'app';
     const buildConfig = {
-      format: 'amd',
+      format: 'global',
       minify: true,
       sourceMaps: true
     };
