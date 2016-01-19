@@ -4,7 +4,7 @@ const module:ng.IModule = App.module("app.services", []);
 
 export class EndpointService {
 
-  private baseUri:string = "http://localhost:8000/api/";
+  private baseUri:string = "http://localhost:3000/api/";
 
   public getUrl(moduleName:string):string {
     return this.baseUri + moduleName + ".json";
