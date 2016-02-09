@@ -30,14 +30,13 @@
     "karma-phantomjs2-launcher": "^0.4.0",
     "minimist": "^1.2.0",
     "mocha": "^2.4.5",
-    "phantomjs": "^2.1.3",
     "phantomjs-prebuilt": "^2.1.4",
     "portfinder": "^1.0.0",
     "protractor": "~3.0.0",
     "run-sequence": "~1.1.5",
     "sinon": "~1.17.2",
     "sinon-chai": "~2.8.0",
-    "tsd": "~0.6.5",
+    "typings": "^0.6.6",
     "tslint": "^3.2.1",
     "typescript": "~1.7.5"
   },
@@ -46,7 +45,7 @@
   },
   "scripts": {
     "test": "gulp test",
-    "postinstall": "jspm install && tsd reinstall -s -o && node ./node_modules/protractor/bin/webdriver-manager update"
+    "postinstall": "jspm install && typings install && node ./node_modules/protractor/bin/webdriver-manager update"
   },
   "jspm": {
     "directories": {
