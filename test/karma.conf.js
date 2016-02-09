@@ -29,11 +29,11 @@ module.exports = function (config) {
     port: 9999,
 
     browsers: [
-      'PhantomJS'
+      'PhantomJS2'
     ],
 
     plugins: [
-      'karma-phantomjs-launcher',
+      'karma-phantomjs2-launcher',
       'karma-jspm',
       'karma-mocha',
       'karma-chai-sinon',
