@@ -37,8 +37,8 @@
     "run-sequence": "~1.1.5",
     "sinon": "~1.17.2",
     "sinon-chai": "~2.8.0",
-    "tsd": "~0.6.5",
     "tslint": "^3.2.1",
+    "typings": "^0.6.6",
     "typescript": "~1.7.5"
   },
   "engines": {
@@ -46,7 +46,7 @@
   },
   "scripts": {
     "test": "gulp test",
-    "postinstall": "jspm install && tsd reinstall -s -o && node ./node_modules/protractor/bin/webdriver-manager update"
+    "postinstall": "jspm install && typings install && node ./node_modules/protractor/bin/webdriver-manager update"
   },
   "jspm": {
     "directories": {
