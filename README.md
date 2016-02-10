@@ -35,7 +35,7 @@ Example contains simple implementation of Angular:
 ### Installing dependencies
 -------
 ```
-npm install gulp jspm typescript tsd -g
+npm install gulp jspm typescript typings -g
 ```
 
 ```
