@@ -7,7 +7,15 @@ System.config({
   paths: {
     "github:*": "vendor/jspm_packages/github/*",
     "npm:*": "vendor/jspm_packages/npm/*",
-    "app": "src/index"
+    "app/*": "src/*"
+  },
+
+  packages: {
+    "app": {
+      "main": "index",
+      "format": "amd",
+      "defaultExtension": "js"
+    }
   },
 
   map: {
