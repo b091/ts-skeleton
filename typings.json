@@ -1,0 +1,19 @@
+{
+  "ambientDependencies": {
+    "angular": "github:DefinitelyTyped/DefinitelyTyped/angularjs/angular.d.ts#17ef40452039d19e06dc2a3815ea898c505860fa",
+    "angular-animate": "github:DefinitelyTyped/DefinitelyTyped/angularjs/angular-animate.d.ts#3c26c6546fab58b39d04d6ae40bacfa9a25dd196",
+    "angular-cookies": "github:DefinitelyTyped/DefinitelyTyped/angularjs/angular-cookies.d.ts#ccd32787a2aed5f876693b2c8d7100d1daba4782",
+    "angular-protractor": "github:DefinitelyTyped/DefinitelyTyped/angular-protractor/angular-protractor.d.ts#17fa1e5f269189f7f8e0f53f8c443e6c2eac562c",
+    "angular-resource": "github:DefinitelyTyped/DefinitelyTyped/angularjs/angular-resource.d.ts#c6609aff88f2c59e4df9adb93df5c7932adfd7b4",
+    "angular-sanitize": "github:DefinitelyTyped/DefinitelyTyped/angularjs/angular-sanitize.d.ts#32194eaa6f9fd91364a8a18bc5591055e61f4bc5",
+    "angular-translate": "github:DefinitelyTyped/DefinitelyTyped/angular-translate/angular-translate.d.ts#19850bf86c876e0c2544842114878ece4664941a",
+    "angular-ui-router": "github:DefinitelyTyped/DefinitelyTyped/angular-ui-router/angular-ui-router.d.ts#655f8c1bf3c71b0e1ba415b36309604f79326ac8",
+    "chai": "github:DefinitelyTyped/DefinitelyTyped/chai/chai.d.ts#9c25433c84251bfe72bf0030a95edbbb2c81c9d5",
+    "jquery": "github:DefinitelyTyped/DefinitelyTyped/jquery/jquery.d.ts#cf2a968f0edd7d30773f7d23fe3708fa029d5ab7",
+    "mocha": "github:DefinitelyTyped/DefinitelyTyped/mocha/mocha.d.ts#d6dd320291705694ba8e1a79497a908e9f5e6617",
+    "selenium-webdriver": "github:DefinitelyTyped/DefinitelyTyped/selenium-webdriver/selenium-webdriver.d.ts#a83677ed13add14c2ab06c7325d182d0ba2784ea",
+    "sinon": "github:DefinitelyTyped/DefinitelyTyped/sinon/sinon.d.ts#6e7d83167d86d857817bd492786f8304f5c4a0e4",
+    "sinon-chai": "github:DefinitelyTyped/DefinitelyTyped/sinon-chai/sinon-chai.d.ts#ceedbb35506c4b20867ddb495e8626ea04f38969",
+    "toastr": "github:DefinitelyTyped/DefinitelyTyped/toastr/toastr.d.ts#a36e6ad2f472741b1c22c2af955bf13b7c62e146"
+  }
+}
