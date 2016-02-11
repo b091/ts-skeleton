@@ -1,7 +1,7 @@
 module.exports = (gulp, serverRootDir, watchDir, openBrowser) => {
+  const path = require('path');
 
   return () => {
-    const path = require('path');
 
     const browserSync = require('browser-sync').init({
       server: {
@@ -23,12 +23,15 @@ module.exports = (gulp, serverRootDir, watchDir, openBrowser) => {
 
     if (watchDir) {
       var fileExtensionToWatch = 'js';
-      var callback = reloadCallback;
+      var callback = (event) => {
+        console.info(`File ${event.path} was ${event.type}`);
+        reloadCallback();
+      };
 
       if (shouldWatchTypeScript()) {
         fileExtensionToWatch = 'ts';
         callback = (event) => {
-          require('./compile')(gulp, watchDir, reloadCallback)(); // todo single file recompile
+          require('./compile')(gulp, watchDir, reloadCallback, event.path)();
           console.info(`File ${event.path} was ${event.type}, running compilation...`);
         };
         onOffFlag = '✓';
