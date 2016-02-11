@@ -1,7 +1,8 @@
 module.exports = (gulp, serverRootDir, watchDir, openBrowser) => {
+
   return () => {
     const path = require('path');
-    var onOffFlag = '✗';
+
     const browserSync = require('browser-sync').init({
       server: {
         baseDir: [serverRootDir]
@@ -12,23 +13,32 @@ module.exports = (gulp, serverRootDir, watchDir, openBrowser) => {
       notify: false
     });
 
-    if (watchDir) {
-      if (shouldWatchTypeScript()) {
-        gulp.watch(path.join(watchDir, '**', '*.ts'), (event) => {
-          require('./compile')(gulp, watchDir, browserSync.reload)(); // todo single file recompile
-          console.info(`File ${event.path} was ${event.type}, running compilation...`);
-        });
-        onOffFlag = '✓';
-      }
-      else {
-        gulp.watch(path.join(watchDir, '**', '*.js'), browserSync.reload);
-      }
-    }
-
-    console.info(`\n\tWatching TypeScript ${onOffFlag}\n`);
+    setWatchers(browserSync.reload);
 
     return browserSync;
   };
+
+  function setWatchers(reloadCallback) {
+    var onOffFlag = '✗';
+
+    if (watchDir) {
+      var fileExtensionToWatch = 'js';
+      var callback = reloadCallback;
+
+      if (shouldWatchTypeScript()) {
+        fileExtensionToWatch = 'ts';
+        callback = (event) => {
+          require('./compile')(gulp, watchDir, reloadCallback)(); // todo single file recompile
+          console.info(`File ${event.path} was ${event.type}, running compilation...`);
+        };
+        onOffFlag = '✓';
+      }
+
+      gulp.watch(path.join(watchDir, '**', `*.${fileExtensionToWatch}`), callback);
+    }
+
+    console.info(`\n\tWatching TypeScript ${onOffFlag}\n`);
+  }
 
   function shouldWatchTypeScript() {
     const minimist = require('minimist');
