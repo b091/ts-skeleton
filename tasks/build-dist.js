@@ -6,7 +6,10 @@ module.exports = (gulp, config) => () => {
 
   return beginBuild()
     .then(buildSFX)
-    .catch((err) => console.log('Build Failed', err));
+    .catch((err) => {
+      console.log('\n\tBuild Failed\n', err);
+      process.exit(1);
+    });
 
   function beginBuild() {
     builder.reset();
