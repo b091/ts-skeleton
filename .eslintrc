@@ -1,15 +1,15 @@
 {
   "env": {
-    "jasmine": true,
-    "node": true,
-    "mocha": true,
-    "browser": true,
-    "builtin": true
+    "node": true
   },
-  "ecmaFeatures": {
-    "arrowFunctions": true,
-    "blockBindings": true,
-    "templateStrings": true
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "arrowFunctions": true,
+      "blockBindings": true,
+      "templateStrings": true
+    }
   },
   "globals": {},
   "rules": {
