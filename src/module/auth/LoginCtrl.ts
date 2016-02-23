@@ -1,13 +1,22 @@
+import {FooBar} from "./FooBar";
+
 export class LoginCtrl {
 
   public title:string;
 
   // @ngInject
-  constructor(private $filter:ng.IFilterService, private $state:ng.ui.IStateService) {
+  constructor(private $filter:ng.IFilterService,
+              private $state:ng.ui.IStateService,
+              private fooBar:FooBar) {
+
     this.title = "Login Panel";
 
     console.log("Angular Dependency Injection Example");
     console.log($filter, $state);
   }
 
+  public fooBarTitle(title:string):string {
+    this.fooBar.testMethod(title);
+    return `${this.title}: ${title}`;
+  }
 }

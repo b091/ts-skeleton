@@ -4,6 +4,7 @@
 /// <reference path="../typings/main/ambient/chai/chai.d.ts" />
 /// <reference path="../typings/main/ambient/angular-protractor/angular-protractor.d.ts" />
 /// <reference path="../typings/browser/ambient/selenium-webdriver/selenium-webdriver.d.ts" />
+/// <reference path="../typings/browser/ambient/angular-mocks/angular-mocks.d.ts" />
 
 // protractor missing declaration
 /* tslint:disable */
