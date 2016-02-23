@@ -1,5 +1,6 @@
 module.exports = (gulp, serverRootDir, watchDir, openBrowser) => {
   const path = require('path');
+  const TS_WATCH_FLAG = '--watch-ts';
 
   return () => {
 
@@ -44,7 +45,6 @@ module.exports = (gulp, serverRootDir, watchDir, openBrowser) => {
   }
 
   function shouldWatchTypeScript() {
-    const minimist = require('minimist');
-    return !!minimist(process.argv.slice(3))['watch-ts'];
+    return process.argv.slice(3).indexOf(TS_WATCH_FLAG) !== -1;
   }
 };
