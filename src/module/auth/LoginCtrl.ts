@@ -16,7 +16,7 @@ export class LoginCtrl {
   }
 
   public fooBarTitle(title:string):string {
-    this.fooBar.testMethod(title);
-    return `${this.title}: ${title}`;
+    const prefix:string = this.fooBar.testMethod();
+    return `${prefix}: ${title}`;
   }
 }

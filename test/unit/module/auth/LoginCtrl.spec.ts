@@ -1,38 +1,40 @@
-// import "./../../../test";
-
-import "../../../../src/module/auth/Auth";
-// import {LoginCtrl} from "../../../../src/module/auth/LoginCtrl";
-
-
-var module:Function;
+import {LoginCtrl} from "./../../../../src/module/auth/LoginCtrl";
+import IProvideService = angular.auto.IProvideService;
 
 describe("auth: LoginCtrl", () => {
 
-  let loginCtrl:any;
+  let scope:any;
+  let login:LoginCtrl;
   let fooBarMock:any;
 
   beforeEach(module("app"));
-  // beforeEach(module("app.auth"));
-  beforeEach(module(($provide:any) => {
-    console.log("HERE", $provide);
+  beforeEach(module("app.auth"));
+
+  beforeEach(module(($provide:IProvideService) => {
     fooBarMock = {
-      testMethod: sinon.stub(),
+      testMethod: sinon.stub()
     };
-    $provide.value("FooBar", fooBarMock);
+    $provide.value("fooBar", fooBarMock);
   }));
 
-  // beforeEach(inject((_Login_) => {
-  //   console.log("TTTTT", _Login_);
-    // loginCtrl = _Login_;
-  // }));
+  beforeEach(inject(($rootScope, $controller) => {
+    scope = $rootScope.$new();
+    login = $controller("Login", {
+      $scope: scope
+    });
+  }));
 
-  it("ASD ASD", () => {
-    // console.log("hey", loginCtrl);
+  it("concatenates title with suffix", () => {
+    // given
+    const title:string = "test-title";
+    const fooBarTitle:string = "example-title";
+    fooBarMock.testMethod.returns(title);
+
     // when
-    // flipbookPaginator.nextPage();
+    const result:string = login.fooBarTitle(fooBarTitle);
 
     // then
-    // flipbookAdapterMock.nextPage.should.have.been.called;
+    expect(result).equals(`${title}: ${fooBarTitle}`);
   });
 
 });
