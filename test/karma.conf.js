@@ -1,4 +1,4 @@
-module.exports = function (config) {
+module.exports = function(config) {
   config.set({
 
     // possible values: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
@@ -37,10 +37,16 @@ module.exports = function (config) {
       'karma-mocha',
       'karma-chai-sinon',
       'karma-coverage',
-      'karma-junit-reporter'
+      'karma-junit-reporter',
+      'karma-mocha-reporter'
     ],
 
-    reporters: ['junit', 'progress', 'coverage'],
+    reporters: [
+      'junit',
+      'progress',
+      'mocha',
+      'coverage'
+    ],
 
     preprocessors: {
       'src/**/*.js': ['coverage']
@@ -58,6 +64,11 @@ module.exports = function (config) {
       outputDir: 'report/',
       outputFile: '../test-results.xml',
       suite: ''
+    },
+
+    mochaReporter: {
+      output: 'minimal',
+      showDiff: 'unified'
     },
 
     proxies: {
