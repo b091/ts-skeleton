@@ -1,4 +1,4 @@
-Future proof application skeleton
+"Future proof" application skeleton
 ===
  [![Build Status][travis-image]][travis-url]  [![Dependency Status][depstat-image]][depstat-url]
 
@@ -29,7 +29,7 @@ Example contains simple implementation of Angular:
 
 ### Requirements
 -------
-* nodejs 4.+
+* nodejs 5.+
 * npm 3.+
 
 ### Installing dependencies
