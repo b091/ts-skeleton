@@ -1,9 +1,11 @@
 import {App} from "../../App";
 import {LoginCtrl} from "./LoginCtrl";
 import {LogoutCtrl} from "./LogoutCtrl";
+import {FooBar} from "./FooBar";
 
 const module:ng.IModule = App.module("app.auth", []);
 
+module.service("fooBar", FooBar);
 module.controller("Login", LoginCtrl);
 module.controller("Logout", LogoutCtrl);
 
