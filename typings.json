@@ -1,13 +1,8 @@
 {
   "ambientDependencies": {
     "angular": "github:DefinitelyTyped/DefinitelyTyped/angularjs/angular.d.ts#17ef40452039d19e06dc2a3815ea898c505860fa",
-    "angular-animate": "github:DefinitelyTyped/DefinitelyTyped/angularjs/angular-animate.d.ts#3c26c6546fab58b39d04d6ae40bacfa9a25dd196",
-    "angular-cookies": "github:DefinitelyTyped/DefinitelyTyped/angularjs/angular-cookies.d.ts#ccd32787a2aed5f876693b2c8d7100d1daba4782",
     "angular-mocks": "github:DefinitelyTyped/DefinitelyTyped/angularjs/angular-mocks.d.ts#77dd2668f85730372aa8e62152e652048e8b6b87",
     "angular-protractor": "github:DefinitelyTyped/DefinitelyTyped/angular-protractor/angular-protractor.d.ts#17fa1e5f269189f7f8e0f53f8c443e6c2eac562c",
-    "angular-resource": "github:DefinitelyTyped/DefinitelyTyped/angularjs/angular-resource.d.ts#c6609aff88f2c59e4df9adb93df5c7932adfd7b4",
-    "angular-sanitize": "github:DefinitelyTyped/DefinitelyTyped/angularjs/angular-sanitize.d.ts#32194eaa6f9fd91364a8a18bc5591055e61f4bc5",
-    "angular-translate": "github:DefinitelyTyped/DefinitelyTyped/angular-translate/angular-translate.d.ts#19850bf86c876e0c2544842114878ece4664941a",
     "angular-ui-router": "github:DefinitelyTyped/DefinitelyTyped/angular-ui-router/angular-ui-router.d.ts#655f8c1bf3c71b0e1ba415b36309604f79326ac8",
     "chai": "github:DefinitelyTyped/DefinitelyTyped/chai/chai.d.ts#9c25433c84251bfe72bf0030a95edbbb2c81c9d5",
     "jquery": "github:DefinitelyTyped/DefinitelyTyped/jquery/jquery.d.ts#cf2a968f0edd7d30773f7d23fe3708fa029d5ab7",
