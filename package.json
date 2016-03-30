@@ -43,7 +43,7 @@
   },
   "scripts": {
     "test": "gulp test",
-    "postinstall": "./node_modules/.bin/jspm install && ./node_modules/.bin/typings install && node ./node_modules/.bin/webdriver-manager update"
+    "postinstall": "jspm install && typings install && webdriver-manager update"
   },
   "jspm": {
     "directories": {

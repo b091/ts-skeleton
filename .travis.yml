@@ -8,7 +8,7 @@ sudo: required
 before_install:
 - sudo wget http://security.ubuntu.com/ubuntu/pool/main/i/icu/libicu52_52.1-3ubuntu0.4_amd64.deb
 - sudo dpkg -i libicu52_52.1-3ubuntu0.4_amd64.deb
-- npm install --quiet -g gulp
+- npm install --quiet -g gulp jspm
 - jspm config registries.github.remote https://github.jspm.io
 - jspm config registries.github.auth YjA5MTprcnRnbWszYQ==
 - jspm config registries.github.maxRepoSize 0
