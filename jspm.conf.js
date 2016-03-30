@@ -33,8 +33,8 @@ System.config({
     "angular-ui-bootstrap": "github:angular-ui/bootstrap@0.13.2",
     "angular-ui-router": "github:angular-ui/ui-router@0.2.15",
     "bootstrap": "github:twbs/bootstrap@3.3.5",
-    "clean-css": "npm:clean-css@3.3.8",
-    "css": "github:systemjs/plugin-css@0.1.13",
+    "clean-css": "npm:clean-css@3.4.10",
+    "css": "github:systemjs/plugin-css@0.1.20",
     "ts": "github:frankwallis/plugin-typescript@4.0.1",
     "typescript": "npm:typescript@1.8.2",
     "github:angular-translate/bower-angular-translate-loader-static-files@2.7.2": {
@@ -119,7 +119,7 @@ System.config({
       "isarray": "npm:isarray@1.0.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:clean-css@3.3.8": {
+    "npm:clean-css@3.4.10": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "commander": "npm:commander@2.8.1",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
