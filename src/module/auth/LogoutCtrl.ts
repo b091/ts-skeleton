@@ -1,9 +1,5 @@
 export class LogoutCtrl {
 
-  public title:string;
-
-  constructor() {
-    this.title = "Logout Panel";
-  }
+  public title:string = "Logout Panel!";
 
 }

@@ -1,12 +1,16 @@
-/// <reference path="../typings/main/ambient/sinon/sinon.d.ts" />
-/// <reference path="../typings/main/ambient/mocha/mocha.d.ts" />
-/// <reference path="../typings/main/ambient/sinon-chai/sinon-chai.d.ts" />
-/// <reference path="../typings/main/ambient/chai/chai.d.ts" />
-/// <reference path="../typings/main/ambient/angular-protractor/angular-protractor.d.ts" />
-/// <reference path="../typings/browser/ambient/selenium-webdriver/selenium-webdriver.d.ts" />
+/// <reference path="../typings/browser/ambient/sinon/index.d.ts" />
+/// <reference path="../typings/browser/ambient/mocha/index.d.ts" />
+/// <reference path="../typings/browser/ambient/sinon-chai/index.d.ts" />
+/// <reference path="../typings/browser/ambient/chai/index.d.ts" />
+/// <reference path="../typings/browser/ambient/angular-protractor/index.d.ts" />
+/// <reference path="../typings/browser/ambient/selenium-webdriver/index.d.ts" />
+/// <reference path="../typings/browser/ambient/angular-mocks/index.d.ts" />
 
 // protractor missing declaration
 /* tslint:disable */
 var startLocalhost:any;
 // protractor..
 var expect:any;
+
+// angular
+var module:Function;

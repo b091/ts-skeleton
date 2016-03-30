@@ -1,4 +1,5 @@
 import {EndpointService} from "../../services/EndpointService";
+import IPromise = angular.IPromise;
 
 export class StoryService {
 
@@ -6,51 +7,44 @@ export class StoryService {
   private moduleName:string = "stories";
 
   // @ngInject
-  constructor(private endpointService:EndpointService, private $http:ng.IHttpService) {
+  constructor(private endpointService:EndpointService,
+              private $http:ng.IHttpService) {
   }
 
-  public create(storyId:number):ng.IHttpPromise<any> {
-    return this.handleResponse(
-      this.$http.post(this.endpointService.getUrlForId(this.moduleName, storyId), {}), // story
-      "create"
-    );
+  public create(storyId:number):IPromise<any> {
+    return this.$http
+      .post(this.endpointService.getUrlForId(this.moduleName, storyId), {});
   };
 
-  public getAll():ng.IHttpPromise<any> {
-    return this.handleResponse(
-      this.$http.get(this.endpointService.getUrl(this.moduleName)),
-      "getAll"
-    );
+  public getAll():IPromise<any> {
+    return this.$http
+      .get(this.endpointService.getUrl(this.moduleName))
+      .then((data:any) => this.handleResponse(data));
   }
 
-  public getById(storyId:number):ng.IHttpPromise<any> {
-    return this.handleResponse(
-      this.$http.get(this.endpointService.getUrlForId(this.moduleName, storyId)),
-      "getById"
-    );
+  public getById(storyId:number):IPromise<any> {
+    return this.$http
+      .get(this.endpointService.getUrlForId(this.moduleName, storyId));
   }
 
-  public update(story:Story):ng.IHttpPromise<any> {
-    return this.handleResponse(
-      this.$http.put(this.endpointService.getUrlForId(this.moduleName, story.id), story),
-      "update"
-    );
+  public update(story:Story):IPromise<any> {
+    return this.$http
+      .put(this.endpointService.getUrlForId(this.moduleName, story.id), story);
   }
 
-  public delete(storyId:number):ng.IHttpPromise<any> {
-    return this.handleResponse(
-      this.$http.delete(this.endpointService.getUrlForId(this.moduleName, storyId), {}), // story
-      "delete"
-    );
+  public delete(storyId:number):IPromise<any> {
+    return this.$http
+      .delete(this.endpointService.getUrlForId(this.moduleName, storyId), {});
   }
 
-  public handleResponse(promise:ng.IHttpPromise<any>, callerMethodName:string):ng.IHttpPromise<any> {
-    return promise.success((data:any) => {
-      this.model.length = 0;
-      Array.prototype.push.apply(this.model, data);
-    }).error((reason:any) => {
-      console.log("StoryService" + callerMethodName, "ERROR", reason);
-    });
+  private handleResponse(response:any):any {
+    this.setModel(response.data);
+    return response;
+  }
+
+  private setModel(data:Story[]):void {
+    this.model.length = 0;
+    Array.prototype.push.apply(this.model, data);
   }
 
 }

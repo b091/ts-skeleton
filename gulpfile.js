@@ -34,7 +34,8 @@ gulp.task('check:tslint:test', require('./tasks/check-tslint')(gulp, config.test
 gulp.task('check', require('./tasks/check')());
 
 gulp.task('test:unit', require('./tasks/test-unit')(config.testDir));
-gulp.task('test:e2e', ['serve:e2e'], require('./tasks/test-e2e')(gulp, config));
+gulp.task('test:e2e:webdriver_update', require('gulp-protractor').webdriver_update);
+gulp.task('test:e2e', ['serve:e2e', 'test:e2e:webdriver_update'], require('./tasks/test-e2e')(gulp, config));
 gulp.task('test', require('./tasks/test')());
 
 gulp.task('ng:directives', ['compile:src'], require('./tasks/ng-directives')(gulp, config));

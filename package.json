@@ -9,41 +9,41 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "browser-sync": "~2.11.0",
+    "browser-sync": "~2.11.2",
     "chai": "~3.5.0",
     "del": "~2.2.0",
-    "eslint": "~2.2.0",
+    "eslint": "~2.5.3",
     "gulp": "~3.9.1",
     "gulp-directive-replace": "git+https://github.com/b091/gulp-directive-replace.git",
     "gulp-eslint": "~2.0.0",
-    "gulp-ng-annotate": "~1.1.0",
-    "gulp-protractor": "~2.1.0",
-    "gulp-tslint": "~4.3.2",
+    "gulp-ng-annotate": "~2.0.0",
+    "gulp-protractor": "~2.2.0",
+    "gulp-tslint": "~4.3.4",
     "gulp-typedoc": "~1.2.1",
-    "jspm": "~0.16.29",
-    "karma": "~0.13.21",
+    "jspm": "~0.16.31",
+    "karma": "~0.13.22",
     "karma-chai-sinon": "~0.1.5",
-    "karma-coverage": "~0.5.3",
-    "karma-jspm": "~2.0.2",
-    "karma-junit-reporter": "~0.3.8",
-    "karma-mocha": "~0.2.1",
+    "karma-coverage": "~0.5.5",
+    "karma-jspm": "~2.1.0",
+    "karma-junit-reporter": "~0.4.1",
+    "karma-mocha": "~0.2.2",
     "karma-phantomjs-launcher": "~1.0.0",
     "mocha": "~2.4.5",
-    "phantomjs-prebuilt": "~2.1.4",
-    "protractor": "~3.0.0",
+    "phantomjs-prebuilt": "~2.1.7",
+    "protractor": "~3.2.2",
     "run-sequence": "~1.1.5",
-    "sinon": "~1.17.2",
+    "sinon": "~1.17.3",
     "sinon-chai": "~2.8.0",
-    "tslint": "~3.4.0",
-    "typescript": "^1.8.2",
-    "typings": "~0.6.8"
+    "tslint": "~3.6.0",
+    "typescript": "^1.8.9",
+    "typings": "~0.7.9"
   },
   "engines": {
     "node": ">=5.6.0"
   },
   "scripts": {
     "test": "gulp test",
-    "postinstall": "./node_modules/.bin/jspm install && ./node_modules/.bin/typings install && node ./node_modules/.bin/webdriver-manager update"
+    "postinstall": "jspm install && typings install && webdriver-manager update"
   },
   "jspm": {
     "directories": {
@@ -51,25 +51,26 @@
     },
     "configFile": "jspm.conf.js",
     "dependencies": {
-      "angular": "github:angular/bower-angular@^1.4.3",
-      "angular-animate": "github:angular/bower-angular-animate@^1.4.3",
-      "angular-cookies": "github:angular/bower-angular-cookies@^1.4.3",
-      "angular-messages": "github:angular/bower-angular-messages@^1.4.3",
-      "angular-resource": "github:angular/bower-angular-resource@^1.4.3",
-      "angular-sanitize": "github:angular/bower-angular-sanitize@^1.4.3",
-      "angular-toastr": "github:Foxandxss/angular-toastr@^1.5.0",
-      "angular-translate": "github:angular-translate/bower-angular-translate@^2.7.2",
-      "angular-translate-loader-static-files": "github:angular-translate/bower-angular-translate-loader-static-files@^2.7.2",
-      "angular-translate-loader-url": "github:angular-translate/bower-angular-translate-loader-url@^2.7.2",
-      "angular-ui-bootstrap": "github:angular-ui/bootstrap@^0.13.2",
-      "angular-ui-router": "github:angular-ui/ui-router@^0.2.15",
-      "bootstrap": "github:twbs/bootstrap@^3.3.5",
-      "clean-css": "npm:clean-css@^3.3.8",
-      "css": "github:systemjs/plugin-css@^0.1.13",
-      "ts": "github:frankwallis/plugin-typescript@^4.0.1"
+      "angular": "github:angular/bower-angular@1.4.3",
+      "angular-animate": "github:angular/bower-angular-animate@1.4.3",
+      "angular-cookies": "github:angular/bower-angular-cookies@1.4.3",
+      "angular-messages": "github:angular/bower-angular-messages@1.4.3",
+      "angular-resource": "github:angular/bower-angular-resource@1.4.3",
+      "angular-sanitize": "github:angular/bower-angular-sanitize@1.4.3",
+      "angular-toastr": "github:Foxandxss/angular-toastr@1.5.0",
+      "angular-translate": "github:angular-translate/bower-angular-translate@2.7.2",
+      "angular-translate-loader-static-files": "github:angular-translate/bower-angular-translate-loader-static-files@2.7.2",
+      "angular-translate-loader-url": "github:angular-translate/bower-angular-translate-loader-url@2.7.2",
+      "angular-ui-bootstrap": "github:angular-ui/bootstrap@0.13.2",
+      "angular-ui-router": "github:angular-ui/ui-router@0.2.15",
+      "bootstrap": "github:twbs/bootstrap@3.3.5"
     },
     "devDependencies": {
-      "typescript": "npm:typescript@^1.8.2"
+      "angular-mocks": "github:angular/bower-angular-mocks@1.4.3",
+      "clean-css": "npm:clean-css@^3.4.10",
+      "typescript": "npm:typescript@1.8.2",
+      "css": "github:systemjs/plugin-css@^0.1.20",
+      "ts": "github:frankwallis/plugin-typescript@4.0.5"
     }
   }
 }
