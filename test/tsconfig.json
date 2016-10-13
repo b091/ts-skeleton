@@ -3,6 +3,20 @@
     "experimentalDecorators": true,
     "module": "amd",
     "target": "es5",
-    "sourceMap": true
-  }
+    "sourceMap": true,
+    "types": [
+      "angular",
+      "angular-mocks",
+      "sinon",
+      "mocha",
+      "sinon-chai",
+      "chai",
+      "protractor",
+      "selenium-webdriver"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

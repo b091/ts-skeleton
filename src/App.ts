@@ -1,8 +1,3 @@
-/// <reference path="../typings/main/ambient/jquery/index.d.ts" />
-/// <reference path="../typings/main/ambient/angular/index.d.ts" />
-/// <reference path="../typings/main/ambient/angular-ui-router/index.d.ts" />
-/// <reference path="../typings/main/ambient/toastr/index.d.ts" />
-
 /* tslint:disable:variable-name */
 
 import * as angular from "angular";

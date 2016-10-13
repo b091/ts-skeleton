@@ -3,6 +3,16 @@
     "experimentalDecorators": true,
     "module": "amd",
     "target": "es5",
-    "sourceMap": true
-  }
+    "sourceMap": true,
+    "types": [
+      "jquery",
+      "angular",
+      "angular-ui-router",
+      "toastr"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

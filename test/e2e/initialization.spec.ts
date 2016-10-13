@@ -1,5 +1,3 @@
-/// <reference path="../references.ts" />
-
 describe("TS Skeleton", () => {
   beforeEach(() => {
     startLocalhost();

@@ -4,4 +4,3 @@ export class FooBar {
     return "servedresponse";
   }
 }
-

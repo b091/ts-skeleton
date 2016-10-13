@@ -1,4 +1,3 @@
-/// <reference path="../references.ts" />
 import {App} from "../../src/App";
 
 describe("App", () => {
