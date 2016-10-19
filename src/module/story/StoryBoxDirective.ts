@@ -5,7 +5,7 @@ export class StoryBoxDirective implements ng.IDirective {
 
   public templateUrl:string = "src/module/story/view/story-box.html";
   public restrict:string = "EA";
-  public scope:Object = {
+  public scope:{[boundProperty:string]:string} = {
     story: "="
   };
 

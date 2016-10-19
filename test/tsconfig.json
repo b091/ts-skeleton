@@ -1,18 +1,26 @@
 {
   "compilerOptions": {
-    "experimentalDecorators": true,
     "module": "amd",
     "target": "es5",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "sourceMap": true,
+    "noEmitHelpers": true,
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "strictNullChecks": false,
+    "baseUrl": "./src",
+    "paths": [],
     "types": [
       "angular",
       "angular-mocks",
       "sinon",
       "mocha",
       "sinon-chai",
-      "chai",
-      "protractor",
-      "selenium-webdriver"
+      "chai"
     ]
   },
   "exclude": [

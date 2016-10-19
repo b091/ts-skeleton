@@ -5,7 +5,7 @@ export class MenuBoxDirective implements ng.IDirective {
 
   public templateUrl:string = "src/module/menu/view/menu.html";
   public restrict:string = "EA";
-  public scope:Object = {
+  public scope:{[boundProperty:string]:string} = {
     story: "="
   };
 
